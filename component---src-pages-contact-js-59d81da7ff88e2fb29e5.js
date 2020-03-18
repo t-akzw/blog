@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"Cuy+":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("TJpk"),m=a.n(c),o=a("83Zx"),u=a("IpnI"),i=a.n(u);t.default=function(){return l.a.createElement(o.a,null,l.a.createElement("main",null,l.a.createElement(m.a,{title:"Contact | "+i.a.siteTitle}),l.a.createElement("h1",null,"Contact me"),l.a.createElement("p",null,"maatmaat@googlegroups.com"),l.a.createElement("p",null,"https://qiita.com/littlem")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-59d81da7ff88e2fb29e5.js.map

@@ -5,8 +5,8 @@ const config = {
   siteTitleShort: "littlemブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "littlemブログ", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://t-akzw.github.io/blog/", // Domain of your website without pathPrefix.
-  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  siteUrl: "https://t-akzw.github.io", // Domain of your website without pathPrefix.
+  pathPrefix: "/blog", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "littlemブログ", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
@@ -18,7 +18,7 @@ const config = {
   userTwitter: "littlem07326014", // Optionally renders "Follow Me" in the Bio segment.
   userGitHub: "t-akzw", // Optionally renders "Follow Me" in the Bio segment.
   userLocation: "Japan", // User location to display in the author segment.
-  userAvatar: "https://github.com/t-akzw/blog/blob/master/gatsby-markdown-blog-starter/content/images/me.jpg", // User avatar to display in the author segment.
+  userAvatar: "https://drive.google.com/file/d/1R2lzKAUqQYLE-i9trksqWiqwQg5g5JHW/view?usp=sharing", // User avatar to display in the author segment.
   userDescription:
     "ゴミエンジニアのひたすら精進日記", // User description to display in the author segment. 
   copyright: "Copyright © 2020. All rights reserved.", // Copyright string for the footer of the website and RSS feed.

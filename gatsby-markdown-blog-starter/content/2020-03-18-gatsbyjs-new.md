@@ -28,4 +28,33 @@ gatsby serve
 
 ```bash
 vi data/SiteConfig.js
+
+# bioを変更する
+vi ./src/components/Bio.js
+
+# aboutを変更する
+vi ./src/components/About.js
+
+# contactを変更する
+vi ./src/pages/contact.js
+```
+
+### github pagesへのデプロイ
+
+```bash
+npm install gh-pages --save-dev
+npm audit fix
+
+# パスを修正しておく
+vi data/SiteConfig.js
+# pathPrefix: "/blog"
+
+vi package.json
+# {
+#   "scripts": {
+#     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
+#   }
+# }
+
+npm run deploy
 ```

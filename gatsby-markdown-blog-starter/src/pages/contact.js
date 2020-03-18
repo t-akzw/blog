@@ -7,8 +7,8 @@ const ContactPage = () => (
   <Layout>
     <main>
       <Helmet title={`Contact | ${config.siteTitle}`} />
-      <h1>Contact us</h1>
-      <p>Contact informations</p>
+      <h1>Contact me</h1>
+      <p>maatmaat@googlegroups.com</p>
     </main>
   </Layout>
 )

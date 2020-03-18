@@ -2,7 +2,7 @@
   "name": "gatsby-Blog-advanced",
   "description": "GatsbyJS  Blog starter that includes examples for markdown use cases.",
   "version": "1.1.0",
-  "author": "Ammar Jabakji <ammarjabakji@gmail.com>",
+  "author": "T.A.",
   "dependencies": {
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.14",
@@ -49,7 +49,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.14.3",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.18.2",
     "remark-cli": "^6.0.1",
     "remark-preset-lint-recommended": "^3.0.3",
@@ -69,12 +69,14 @@
     "serve": "gatsby serve",
     "build": "gatsby build",
     "build:pp": "gatsby build --prefix-paths",
-    "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
+    "build:gh": "npm run clean && npm run build:pp && gh-pages -d public -b master",
     "clean": "rm -rf public && rm -rf .cache",
     "lint:js": "eslint --ext .js",
     "lint:md": "remark content/posts/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
-    "format:js": "prettier '**/*.{js,jsx}' --write"
+    "format:js": "prettier '**/*.{js,jsx}' --write",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages",
+    "gh": "gh-pages -d public -b gh-pages"
   },
   "remarkConfig": {
     "plugins": [

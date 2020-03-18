@@ -2,9 +2,12 @@ import React from 'react'
 
 const About = () => (
   <>
-    <h1>
-        Edit About component or pages/about.js to include your information.
-    </h1>
+    <h1>略歴</h1>
+    <ol>
+      <li>ハードウェア設計おじさん</li>
+      <li>サーバサイドおじさん</li>
+      <li>DevOpsおじさん</li>
+    </ol>
   </>
 )
 

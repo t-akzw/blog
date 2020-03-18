@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"Cuy+":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),c=n("TJpk"),o=n.n(c),u=n("83Zx"),r=n("IpnI"),m=n.n(r);t.default=function(){return l.a.createElement(u.a,null,l.a.createElement("main",null,l.a.createElement(o.a,{title:"Contact | "+m.a.siteTitle}),l.a.createElement("h1",null,"Contact me"),l.a.createElement("p",null,"maatmaat@@googlegroups.com")))}}}]);
-//# sourceMappingURL=component---src-pages-contact-js-a9953abc19006134c15c.js.map

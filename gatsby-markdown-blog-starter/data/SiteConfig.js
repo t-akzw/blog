@@ -18,7 +18,7 @@ const config = {
   userTwitter: "littlem07326014", // Optionally renders "Follow Me" in the Bio segment.
   userGitHub: "t-akzw", // Optionally renders "Follow Me" in the Bio segment.
   userLocation: "Japan", // User location to display in the author segment.
-  userAvatar: "https://drive.google.com/file/d/1R2lzKAUqQYLE-i9trksqWiqwQg5g5JHW/view?usp=sharing", // User avatar to display in the author segment.
+  userAvatar: "https://www.moomin.co.jp/wp/wp-content/uploads/2019/03/little-my-440x440.png", // User avatar to display in the author segment.
   userDescription:
     "ゴミエンジニアのひたすら精進日記", // User description to display in the author segment. 
   copyright: "Copyright © 2020. All rights reserved.", // Copyright string for the footer of the website and RSS feed.

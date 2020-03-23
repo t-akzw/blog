@@ -1,6 +1,6 @@
 ---
-date: 2020-03-24-stat-practice-v03
-title: "統計検定準1級-03 ~事象と確率 練習~"
+date: 2020-03-24-stat-practice-v02
+title: "統計検定準1級-02 ~事象と確率 練習~"
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
 categories: 
     - Statistics

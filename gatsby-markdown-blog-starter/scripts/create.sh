@@ -3,7 +3,7 @@
 title=$1
 d=$(date +%Y-%m-%d)
 
-cat << EOS |tee ../content/${d}-${title}.md
+cat << EOS |tee ./${d}-${title}.md
 ---
 date: ${d}-${title}
 title: "xxx"

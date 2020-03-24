@@ -1,0 +1,40 @@
+---
+date: 2020-03-24-stat-akahon-v03
+title: "統計検定準1級-03 ~確率分布と母関数~"
+cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
+categories: 
+    - Statistics
+tags:
+    - 統計検定準1級
+    - 確率
+---
+
+## 確率分布と母関数
+
+統計検定準1級の出題範囲  
+- 確率関数
+- 確率密度関数
+- 累積分布関数
+- 生存関数
+
+<a target="_blank"  href="https://www.amazon.co.jp/gp/product/4130420658/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4130420658&linkCode=as2&tag=littlem4649-22&linkId=c6133939c8219daece91ffa08adfb69d"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4130420658&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=littlem4649-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=littlem4649-22&l=am2&o=9&a=4130420658" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+こちらの本では第5, 7章の内容です。  
+
+## 確率関数(=確率分布)
+
+## 確率密度関数
+
+![](https://lh3.googleusercontent.com/M3r5B81m-QW89BXL572LR6pRzxQhG76WEP0mGfQ6y3WORmUO_bXgUd6EIlsbBYGHJVxXlqrsFkyGiB_UUPagPyCzywhsyitQrBGcI1WEfbjCcvMgPKNXqaFIdrJuhQ-MlckkKFAUIDPnlND6DiHHrA7XXZHlJji9Kq3KLaryUnPaHTXi3zdPBq1Xfv19R2sQIVvyNEflt59B-GUVKG2jaT3GnCVrDMqWGuud4N0kpLc2X1I4ssXxx-Z91JgYOZIyboPLZyfY1YP7Tegt9ccY3iiKFTkbfBayC3zGGdZQfCaohzjEfCTTnmYrQppkK9ZpuoqqQekESz2tnWvBO5-ttTMLcrFrJLYgNuaULl8QLQxL8HJo4fjvwZANz3y05g_B7mXvDPKpsEnfHmiAwQT30PPHi862vjLx6l5PenMPGnXD5lHQ1v69g_qJeffqNbBoaVFG5sdr31IVpXJ2t3xaqgoBvtmxMwrc5Hx3ISskQdfPzi0D9Rgs7Mca9UyVWRSJ_uL4an2p1j7iwGmCeobybeCX3fgZbrV8e0AQu9FkmuDetso9nMPm_RdgksxzXUQp2dl1rBgJ_rnLJj1dLMGSbA4WGAgDW2HrnVJ7KUOIYSVD_BgRtaTY9SH0WF8rs6RMaH8--XS01-zdnpGqJId86MjDSBr7cy-oyziGqjnyKFSLyJto_uklLjKyWE0Jn8LKD0hEhAr1R98lQK876UXProgN62S5ndw_Fu7CS3tS0mNJHNf0xf7Faw=w1668-h2154-no)
+
+## 累積分布関数
+
+![](https://lh3.googleusercontent.com/WyzuIfsSfgkpzy4dfGeUgcsQUUwTzA-ffl59mStCOqmDYZ8E_t-VwQHXALzBBppBHfg62tgnW5mkfw6LJryOQ14dFfxY-g7GFdvTuymBdFw14Rw0mwOrFnq0y7blC39hKdIkDw6G5jxPZTiFapWN6QsUTPmgn8yv5AVPAlz6er7b7Ta31D89WGDOF7b2j6RtQfcbYY-UnDnd8bnR1K8fjM81cmp3vM15WDOrVIkhG1l3UzpWUYOuEOa8cecsFUKgXGQgXhzu9nciXkdDE40SAmDgswfKbtfGpESAxL0QjkGDdGHknEh43461vYB1ae9Ix9Mh_stH-OCar68Njct-DmXd4fsGTfofa9GnEBnt7siygbuK8nvbJBmWS9GWwfFSqsrpegbnULJLJwAVB13m0KdmlGONtiuLTkv8NZcw1O2dlUQBdI1m9C6NZcD_WTLNAXquDWB9ovrStN-pmwWJhlUvHeWJxno87LYs2RqVdsXT7AxPoQYSGSy2tospHwVMoeNmQGd4de1Z6Tjmisb84dt2XkEoj0FZDYa5oNKJ43U4govDhXmE4TWSsPqGGQR1_UqdbgT6xoLlFzfQxgtDcKSCbITwEK5eG1aagiJNILsDUhl0x0K9QX6MABIR0AYJbGl-P0OXGbd3X6kJADUWK9OU7hS9kNl6N11qOe1dxLAmpfVud4vZVcjkp8qtEwkLiSel3WQ3sXiCzfb12dibT5aZlh9JJaNeY6rjhcBeVBhm7mT2gR-RTw=w1668-h2154-no)
+
+## 生存関数
+
+生存時間解析で使うっぽい  
+過去問では自分が見た限り一問簡単な問題が出ていた  
+https://to-kei.net/survival-data-analysis/survival-function/
+
+![](https://lh3.googleusercontent.com/heVbtEpG9NwpqIx_QsNg7zx1NcJXLvDRjst8it3ez8Cg_2RIh6gMLoypFJNkRS09sk_ugoqwqVDydvgsmcM1NIhzwOHLo04jVtT-pOaLXFVQ0O6ursoHcSTiwlFP7nVTnmZ2aF5JmOQMpoS34nfTfDMRbJwDzZLH23xlTO2ttX2bbOLnRoUcE9ieIp7bvFKCcDNqpkvu_6OGVUyYztPoZrTlS35CVSQWUfyOMsXNr9M91RS267wgvXTQeE20xjNYkq9cPMEwYs_wxeBIo8yOxEO_T8ykjqd-Smtvad8ttthYPr49-YhiI1xdFSVCova0voClgnU72XVPAikrQkRYnYfs7Yyt8MFNr0TIutB7XOC6usk4BKL8HI1pL9f4Fp7bE0fJ8gEkFHY8mIWLSQuNUuLEU4L_PU0E6jT4r1RtY8XggPx0hoITKYivOrXiJ1h52BsPK1E4yLZAucGBjuyAng6rgLNrMkkESgwv2IeuBi2N8F3eFdUAPK1ujSsFZHtdzJc_0gdlQt9089JY68IKCQl0sBYTiuJn1PYaGY30T_lNwJLlJrrOzpC7tnwBNCpfmfi7CH1MMFc7pgqs8FMTqzP3WAKvHxb1O0v-gZ2YKzikSsSDyhMGCvpJ5tUuRNu1wpx9Yjd07HODZQqBO7VJcQqqNBqtS7wdpkHR0wwnFzvAzUFSElNJyHa8ih7-17diL0S1fg9YH1CqTPvXzPn2cGb5a-dYUkyT_3n2sbBbeEZtIWC5-xBA8g=w1668-h2154-no)

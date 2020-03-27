@@ -1,4 +1,1475 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[littlem-nooblog]]></title><description><![CDATA[littlem-nooblog]]></description><link>https://t-akzw.github.io/blog</link><image><url>https://t-akzw.github.io/blog/logos/logo-48.png</url><title>littlem-nooblog</title><link>https://t-akzw.github.io/blog</link></image><generator>GatsbyJS Advanced Starter</generator><lastBuildDate>Tue, 24 Mar 2020 16:06:44 GMT</lastBuildDate><atom:link href="https://t-akzw.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2020. All rights reserved.]]></copyright><item><title><![CDATA[統計検定準1級-02 ~事象と確率 練習~]]></title><description><![CDATA[今回は前回やった範囲の問題を解いた。   統計検定2級 2016/11月 解答番号12,13 参考書を買ってね。     といたやつ。 自分はこういう問題を解く時は、事象A, Bのようにきちんと書き出すようにしている。そこができれば後は解くだけな気がする。    統計WEb…]]></description><link>https://t-akzw.github.io/blog/69d131a9-0035-5a87-bd40-14e9796b4e4c</link><guid isPermaLink="false">https://t-akzw.github.io/blog/69d131a9-0035-5a87-bd40-14e9796b4e4c</guid><category><![CDATA[統計検定準1級]]></category><pubDate>Mon, 23 Mar 2020 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今回は前回やった範囲の問題を解いた。  &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[littlem-nooblog]]></title><description><![CDATA[littlem-nooblog]]></description><link>https://t-akzw.github.io/blog</link><image><url>https://t-akzw.github.io/blog/logos/logo-48.png</url><title>littlem-nooblog</title><link>https://t-akzw.github.io/blog</link></image><generator>GatsbyJS Advanced Starter</generator><lastBuildDate>Fri, 27 Mar 2020 07:47:22 GMT</lastBuildDate><atom:link href="https://t-akzw.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2020. All rights reserved.]]></copyright><item><title><![CDATA[[WIP]「Kubernetesで実践するクラウドネイティブDevOps」 学習ログ]]></title><description><![CDATA[是非、買って読んで欲しい。
+学習のログを残す。
+https://www.oreilly.co.jp/books/9784873119014/ github
+https://github.com/cloudnativedevops/demo…]]></description><link>https://t-akzw.github.io/blog/3a2785c2-7104-5aa5-85b0-0b210653d98c</link><guid isPermaLink="false">https://t-akzw.github.io/blog/3a2785c2-7104-5aa5-85b0-0b210653d98c</guid><category><![CDATA[Kubernetes]]></category><category><![CDATA[DevOps]]></category><pubDate>Thu, 26 Mar 2020 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;是非、買って読んで欲しい。
+学習のログを残す。
+&lt;a href=&quot;https://www.oreilly.co.jp/books/9784873119014/&quot;&gt;https://www.oreilly.co.jp/books/9784873119014/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;github
+&lt;a href=&quot;https://github.com/cloudnativedevops/demo&quot;&gt;https://github.com/cloudnativedevops/demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;流れが早いので多少内容が古くなっていて（2019/3月）監修訳がついている。&lt;br&gt;
+特にツールの流行りすたりが激しい。&lt;br&gt;
+&lt;a href=&quot;https://landscape.cncf.io/&quot;&gt;CNCFのlandscape&lt;/a&gt;がとても勉強になる。&lt;/p&gt;
+&lt;p&gt; 【】は自分の感想とか調べた補足とか、ツールに関しては結構調べてます、後CI/CD周り&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : は本番環境ではチェックしておいた方がいいもの（自分の主観）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;1章-クラウドでの革命&quot;&gt;&lt;a href=&quot;#1%E7%AB%A0-%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%A7%E3%81%AE%E9%9D%A9%E5%91%BD&quot; aria-label=&quot;1章 クラウドでの革命 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1章 クラウドでの革命&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;1960年代のメインフレームの時分割利用が一回りして戻ってきたのがクラウド&lt;/li&gt;
+&lt;li&gt;コンピュータを買わずに処理能力を買う&lt;/li&gt;
+&lt;li&gt;差別化につながらない作業をこなしてくれるマネージドサービス&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DevOps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DevとOpsは分かれていた&lt;/li&gt;
+&lt;li&gt;クラウド（分散システム）は運用含めて全体理解が必要&lt;/li&gt;
+&lt;li&gt;DevOpsは双方のグループの連携の試み&lt;/li&gt;
+&lt;li&gt;DevOpsの考え方には議論が多い&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;4つの柱「文化、自動化、測定、共有」&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ビジネス観点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;自動化とプラクティス  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;リリースサイクル迅速化 → ソフトウェア品質向上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;導入にはビジネス文化の根本的な変革が必要&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;経営幹部の戦略的なレベルからの取り組み&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Infrastructure as Code&lt;br&gt;
+クラウドインフラの自動プロビジョニング&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;運用エンジニア = クラウドを自動化するソフトウェアを書く人&lt;/li&gt;
+&lt;li&gt;開発者 = 分散システムを考慮した設計をする人&lt;/li&gt;
+&lt;li&gt;↑共にまなぶことが重要&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;コンテナ&lt;br&gt;
+デプロイには、&lt;br&gt;
+ソフトウェアと依存関係(ライブラリ..)、設定（キーやパスワード）などが必要。&lt;br&gt;
+プロビジョニング、ネットワーク接続、デプロイ、設定、監視など必要。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;これまで&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Puppet, Ansibleなど&lt;br&gt;
+デプロイするソフトウェアを実行、設定、更新するコード&lt;/li&gt;
+&lt;li&gt;まるっと仮想マシンイメージにしちゃう&lt;br&gt;
+ビルド・保守に時間がかかる、運用の不安定さ、DLもデプロイも遅い&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;コンテナ登場&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;標準のパッケージング＋配布形式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CPU上で直接実行され、仮想化のオーバーヘッドがない&lt;/li&gt;
+&lt;li&gt;VMよりサイズが小さい&lt;/li&gt;
+&lt;li&gt;密閉状態にパッケージされ、必要な依存関係を持ち運べる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;オーケストラの指揮
+様々なアーキテクチャ、OS、などの資産管理の世界線&lt;br&gt;
+→ オーケストレータの実行、ポチッとな&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kubernetes&lt;/strong&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Kubernetesは、自動化、フェイルオーバ、集中ロギング、監視など、非常に優秀なシステム
+アドミニストレータが行うであろうことを実行します。DevOpsコミュニティで学習蓄積されてき
+てきた知見を取り入れ、すぐに使用できるデフォルトの機能となっています。 - Kelsey Hightower&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;デプロイを容易にするKubernetes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;デプロイ時間と労力の削減&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;デフォルト、ローリングアップデート（ゼロダウンタイム）&lt;br&gt;
+他にもいくつかのデプロイ方法がある&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;オートスケールサポート&lt;/li&gt;
+&lt;li&gt;冗長性とフェイルオーバー&lt;/li&gt;
+&lt;li&gt;限られたリソースを効率的に活用するのでインフラコストを削減できる&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;プロバイダに非依存&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;抽象化によりクラウド独自の詳細が隠蔽される&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kubernetesを使用する必要性が低い領域&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ステートフルなデータベースなど&lt;/li&gt;
+&lt;li&gt;クラウド関数で片付くようなスタンドアロン型処理 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Knative&lt;/strong&gt;&lt;br&gt;
+コンテナとクラウド関数の両方に対応したソフトウェアデリバリプラットフォーム&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;クラウドネイティブ&lt;br&gt;
+差別化につながらない要素は実行せずビジネスを加速するという実践&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自動化可能&lt;/li&gt;
+&lt;li&gt;ユビキタスかつ柔軟&lt;/li&gt;
+&lt;li&gt;弾力的かつスケーラブル&lt;/li&gt;
+&lt;li&gt;動的（高可用性）&lt;/li&gt;
+&lt;li&gt;オブザーバブル&lt;/li&gt;
+&lt;li&gt;分散化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;分散型のDevOps&lt;br&gt;
+専用のインフラ組織→&lt;br&gt;
+運用の専門者が各チームに分散される&lt;br&gt;
+ほとんどの組織で運用・開発の片方しかできない人は生き残る余地がなくなる&lt;br&gt;
+【そうなのか？】&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;開発者生産性工学（DPE）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;運用だけではなく、ツール構築、問題の解決、など&lt;br&gt;
+開発者の仕事の効率化をするためのあらゆることを担う強力な中央チーム&lt;/li&gt;
+&lt;li&gt;組織規模が大きくなると自然に組織される&lt;br&gt;
+各プロジェクトやチームには専門のSREを配属することで開発とインフラの橋渡しをする&lt;br&gt;
+【インフラ基盤の中央チーム＋チーム専門のインフラアドバイザ、の構成になっていく？】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;2章-kubernetes最初の一歩&quot;&gt;&lt;a href=&quot;#2%E7%AB%A0-kubernetes%E6%9C%80%E5%88%9D%E3%81%AE%E4%B8%80%E6%AD%A9&quot; aria-label=&quot;2章 kubernetes最初の一歩 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2章 Kubernetes最初の一歩&lt;/h1&gt;
+&lt;p&gt;Go+Dockerのお話&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Goのマルチステージビルド&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;デモアプリケーションの実行&quot;&gt;&lt;a href=&quot;#%E3%83%87%E3%83%A2%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%AE%9F%E8%A1%8C&quot; aria-label=&quot;デモアプリケーションの実行 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;デモアプリケーションの実行&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://kubernetes.io/ja/docs/tutorials/kubernetes-basics/deploy-app/deploy-interactive/&quot;&gt;https://kubernetes.io/ja/docs/tutorials/kubernetes-basics/deploy-app/deploy-interactive/&lt;/a&gt; を参考に書き換えた
+kubeでdockerを起動して、helloを表示するだけのAPIを叩く&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ kubectl create deployment demo --image&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;cloudnatived/demo:hello
+
+$ kubectl get deployments
+NAME   READY   UP-TO-DATE   AVAILABLE   AGE
+demo   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;            &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;           6m2s
+
+$ kubectl port-forward deploy/demo &lt;span class=&quot;token number&quot;&gt;9999&lt;/span&gt;:8888
+Forwarding from &lt;span class=&quot;token number&quot;&gt;127.0&lt;/span&gt;.0.1:9999 -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8888&lt;/span&gt;
+Forwarding from &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;::1&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;:9999 -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8888&lt;/span&gt;
+
+$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; http://localhost:9999
+Hello, 世界&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;3章-kubernetsの環境の選択&quot;&gt;&lt;a href=&quot;#3%E7%AB%A0-kubernets%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%AE%E9%81%B8%E6%8A%9E&quot; aria-label=&quot;3章 kubernetsの環境の選択 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3章 Kubernetsの環境の選択&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/152194/fc79ac38-b42e-43e4-0f66-719ef1a957fa.png&quot; alt=&quot;o7leok.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;引用： &lt;a href=&quot;https://x-team.com/blog/introduction-kubernetes-architecture/&quot;&gt;https://x-team.com/blog/introduction-kubernetes-architecture/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;コントロールプレーン（Master node）&lt;br&gt;
+複数存在し、高可用性を備える&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kube-apiserver&lt;br&gt;
+APIリクエスト処理&lt;/li&gt;
+&lt;li&gt;etcd&lt;br&gt;
+存在するノード・クラスタのリソースの詳細などを保存するDB&lt;/li&gt;
+&lt;li&gt;kube-scheduler&lt;br&gt;
+新たに作成されるPodが実行される場所を決定する&lt;/li&gt;
+&lt;li&gt;kube-controller-manager
+Deploymentなどの実行の管理&lt;/li&gt;
+&lt;li&gt;cloud-controller-manager&lt;br&gt;
+クラウドプロバイダとやりとりしてリソースを管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ノード（Worker node）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kubelet&lt;br&gt;
+ノードにスケジューリングされているワークロードを起動するコンテナランタイムの運用・ステータス監視&lt;/li&gt;
+&lt;li&gt;kube-proxy&lt;br&gt;
+Podのグループに対してのトラフィックルーティングする単一不変の仮想IPアドレスを提供する機能の実行管理  &lt;/li&gt;
+&lt;li&gt;コンテナランタイム&lt;br&gt;
+コンテナの起動・終了、通信処理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;障害について&quot;&gt;&lt;a href=&quot;#%E9%9A%9C%E5%AE%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&quot; aria-label=&quot;障害について permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;障害について&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chaos Monkey、カオステストでランダムにノードやPodを停止させてまともに動くかテストする&lt;/li&gt;
+&lt;li&gt;セルフホスティングは高難易度なのでマネージドサービスを使え&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;gke&quot;&gt;&lt;a href=&quot;#gke&quot; aria-label=&quot;gke permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GKE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GKEが最善のマネージドサービスなのでこれを使え&lt;/li&gt;
+&lt;li&gt;マルチゾーンクラスタでノードを分散配置できる&lt;/li&gt;
+&lt;li&gt;リージョナルクラスタは、複数のマスターノードも障害ゾーンに跨って分散される&lt;/li&gt;
+&lt;li&gt;セキュリティパッチ自動適用、コントロールプレーンやetcdの高可用性、などはGoogleが面倒を見る&lt;/li&gt;
+&lt;li&gt;クラスタのオートスケール&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;eks&quot;&gt;&lt;a href=&quot;#eks&quot; aria-label=&quot;eks permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;EKS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ECSは悪くないがKubernetesにこそ未来があるためEKSを提供した&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hasura.io/blog/gke-vs-aks-vs-eks-411f080640dc/&quot;&gt;自分で行う必要のあるセットアップが多くなる覚悟が必要&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;クラスタインフラだけでなくマスターノードにも課金が発生するためGKEより割高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;aks&quot;&gt;&lt;a href=&quot;#aks&quot; aria-label=&quot;aks permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AKS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;急速な追い上げを見せている&lt;/li&gt;
+&lt;li&gt;【Kubernetes co-founderの&lt;a href=&quot;https://twitter.com/brendandburns&quot;&gt;Brendan Burns&lt;/a&gt;がAzureのコンテナ関連サービスのトップをしている】&lt;br&gt;
+【Azureいい!】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;その他&quot;&gt;&lt;a href=&quot;#%E3%81%9D%E3%81%AE%E4%BB%96&quot; aria-label=&quot;その他 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;その他&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenShift&lt;/li&gt;
+&lt;li&gt;IBM Cloud Kubernetes Service&lt;/li&gt;
+&lt;li&gt;HKS（VMware Essential PKS）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://kubernetes.io/ja/docs/setup/production-environment/turnkey/stackpoint/&quot;&gt;Stackpoint.io&lt;/a&gt;（NKS）&lt;br&gt;
+マルチクラウドでワーカノードを実行する、マスターノードはマネージドでWebポータルから管理する&lt;/li&gt;
+&lt;li&gt;CKE&lt;/li&gt;
+&lt;li&gt;kops&lt;/li&gt;
+&lt;li&gt;kubespray&lt;/li&gt;
+&lt;li&gt;TK8&lt;/li&gt;
+&lt;li&gt;Kubernetes The Hard Way&lt;br&gt;
+k8sクラスタ構築の指南書的なもの&lt;/li&gt;
+&lt;li&gt;kubeadm&lt;/li&gt;
+&lt;li&gt;Tarmak&lt;/li&gt;
+&lt;li&gt;RKE&lt;/li&gt;
+&lt;li&gt;Puppet Kubernetesモジュール&lt;/li&gt;
+&lt;li&gt;Kubeformation（死んでるプロジェクトぽい）  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;ベンダロックインの問題&quot;&gt;&lt;a href=&quot;#%E3%83%99%E3%83%B3%E3%83%80%E3%83%AD%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%81%AE%E5%95%8F%E9%A1%8C&quot; aria-label=&quot;ベンダロックインの問題 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ベンダロックインの問題&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kubernetesを利用すること自体がロックインの回避に繋がるのでマネージドを使っても問題ない&lt;/li&gt;
+&lt;li&gt;どうしても必要ならKubernetesセルフホスティングツールを使用する
+kops, Kubespray&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;クラスタレスのコンテナサービス&quot;&gt;&lt;a href=&quot;#%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%AC%E3%82%B9%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9&quot; aria-label=&quot;クラスタレスのコンテナサービス permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;クラスタレスのコンテナサービス&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AWS Fargate&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Azure Container Instances&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AKSとの統合機能あり&lt;/li&gt;
+&lt;li&gt;サーバレスコンテナ（著者は混乱があるので使いたくない用語と言っている、実際にはサーバはあるから）&lt;/li&gt;
+&lt;li&gt;Event Gridを用いて通信&lt;/li&gt;
+&lt;li&gt;Functionsを利用してACIコンテナ作成・実行&lt;/li&gt;
+&lt;li&gt;Flowでワークフロー構築&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;4章-kubernetesオブジェクトの基本操作&quot;&gt;&lt;a href=&quot;#4%E7%AB%A0-kubernetes%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C&quot; aria-label=&quot;4章 kubernetesオブジェクトの基本操作 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4章 Kubernetesオブジェクトの基本操作&lt;/h1&gt;
+&lt;h2 id=&quot;deployment&quot;&gt;&lt;a href=&quot;#deployment&quot; aria-label=&quot;deployment permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment&lt;/h2&gt;
+&lt;p&gt;  スーパーバイザ、コンテナに関する全ての情報を格納し監督する  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;コントローラはリソースを監視して望ましい数にレプリカを保つ&lt;/li&gt;
+&lt;li&gt;DeploymentはReplicaSetオブジェクトを作成して、これがレプリカの管理を処理する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# deploymentの詳細&lt;/span&gt;
+$ kubectl describe deployments/demo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;pod&quot;&gt;&lt;a href=&quot;#pod&quot; aria-label=&quot;pod permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pod&lt;/h2&gt;
+&lt;p&gt;  1つ以上のコンテナのグループを表現する用語&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Deploymentを作成することで、DeploymentがPodを起動&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ReplicaSetがバージョンを表現する&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dev.to/cloudskills/kubernetes-deployment-strategy-recreate-3kgn&quot;&gt;Deployment, ReplicaSet, Podの関係&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# 調整ループ、望ましい状態への調整トライをループし続ける&lt;/span&gt;
+$ kubectl get pods --selector &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+NAME                   READY   STATUS    RESTARTS   AGE
+demo-c84f49bbc-f9ztc   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          4h27m
+$ kubectl delete pods --selector &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+pod &lt;span class=&quot;token string&quot;&gt;&quot;demo-c84f49bbc-f9ztc&quot;&lt;/span&gt; deleted
+$ kubectl get pods --selector &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+NAME                   READY   STATUS    RESTARTS   AGE
+demo-c84f49bbc-9jq6k   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          10s
+
+&lt;span class=&quot;token comment&quot;&gt;# 実験が終わったらdeploymentをシャットダウン&lt;/span&gt;
+$ kubectl delete all --selector &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+pod &lt;span class=&quot;token string&quot;&gt;&quot;demo-c84f49bbc-9jq6k&quot;&lt;/span&gt; deleted
+deployment.apps &lt;span class=&quot;token string&quot;&gt;&quot;demo&quot;&lt;/span&gt; deleted
+replicaset.apps &lt;span class=&quot;token string&quot;&gt;&quot;demo-c84f49bbc&quot;&lt;/span&gt; deleted
+$ kubectl get pods --selector &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+No resources found.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;kubernetesスケジューラ&quot;&gt;&lt;a href=&quot;#kubernetes%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%A9&quot; aria-label=&quot;kubernetesスケジューラ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kubernetesスケジューラ&lt;/h2&gt;
+&lt;p&gt;Deployment&lt;br&gt;
+-&gt; 新しいレプリカが必要&lt;br&gt;
+-&gt; KubernetesデータベースにPodリソースを作成、Podがキューに追加&lt;br&gt;
+-&gt; スケジューリングされていないPodのキューがあれば、Podをキューから取り出して、実行場所となるノードを見つける&lt;br&gt;
+-&gt; Podがノードにスケジュールされると、kubeletがコンテナを起動する  &lt;/p&gt;
+&lt;h2 id=&quot;リソースマニフェスト&quot;&gt;&lt;a href=&quot;#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%9E%E3%83%8B%E3%83%95%E3%82%A7%E3%82%B9%E3%83%88&quot; aria-label=&quot;リソースマニフェスト permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;リソースマニフェスト&lt;/h2&gt;
+&lt;p&gt;リソースの望ましい状態に関する仕様（マニフェスト）&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml:deployment.yaml&quot;&gt;&lt;pre class=&quot;language-yaml:deployment.yaml&quot;&gt;&lt;code class=&quot;language-yaml:deployment.yaml&quot;&gt;apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo
+  labels:
+    app: demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      containers:
+      - name: demo
+        image: cloudnatived/demo:hello
+        ports:
+        - containerPort: 8888&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ kubectl apply -f deployment.yaml
+
+&lt;span class=&quot;token comment&quot;&gt;# コンテナは立つ&lt;/span&gt;
+$ kubectl get pods --selector &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+NAME                    READY   STATUS    RESTARTS   AGE
+demo-64f9f8d47d-jjmc7   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          86s
+
+&lt;span class=&quot;token comment&quot;&gt;# うまくいかない・・&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; http://localhost:9999
+curl: &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;52&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; Empty reply from server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;serviceリソース&quot;&gt;&lt;a href=&quot;#service%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9&quot; aria-label=&quot;serviceリソース permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Serviceリソース&lt;/h2&gt;
+&lt;p&gt;Webプロキシ、ロードバランサのようなもので、
+Podに対するリクエストをルーティングするための単一のエントリポイントを提供する。&lt;/p&gt;
+&lt;p&gt;自分のPort9999をPodのport8888に転送している&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml:service.yaml&quot;&gt;&lt;pre class=&quot;language-yaml:service.yaml&quot;&gt;&lt;code class=&quot;language-yaml:service.yaml&quot;&gt;apiVersion: v1
+kind: Service
+metadata:
+  name: demo
+  labels:
+    app: demo
+spec:
+  ports:
+  - port: 9999
+    protocol: TCP
+    targetPort: 8888
+  selector:
+    app: demo
+  type: ClusterIP&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ kubectl apply -f service.yaml
+
+&lt;span class=&quot;token comment&quot;&gt;# demo Serviceをローカルマシンのポートに接続する&lt;/span&gt;
+$ kubectl port-forward deploy/demo &lt;span class=&quot;token number&quot;&gt;9999&lt;/span&gt;:8888
+
+$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; http://localhost:9999
+Hello, 世界&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;総合的な情報を出力&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ kubectl describe pod --selector &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+Name:           demo-64f9f8d47d-7nzt4
+Namespace:      default
+Priority:       &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+Node:           docker-desktop/192.168.65.3
+Start Time:     Mon, &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; Feb &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;:34:45 +0900
+Labels:         &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+                pod-template-hash&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;64f9f8d47d
+Annotations:    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;none&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+Status:         Running
+IP:             &lt;span class=&quot;token number&quot;&gt;10.1&lt;/span&gt;.0.12
+Controlled By:  ReplicaSet/demo-64f9f8d47d
+Containers:
+  demo:
+    Container ID:   docker://0a7cf35fefc681daa29cf3a064e10ed82d3c459c551313cc4c84e9950622a749
+    Image:          cloudnatived/demo:hello
+    Image ID:       docker-pullable://cloudnatived/demo@sha256:aeae1e551a6cbd60bcfd56c3b4ffec732c45b8012b7cb758c6c4a34779e0e7fb
+    Port:           &lt;span class=&quot;token number&quot;&gt;8888&lt;/span&gt;/TCP
+    Host Port:      &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;/TCP
+    State:          Running
+      Started:      Mon, &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; Feb &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;:34:46 +0900
+    Ready:          True
+    Restart Count:  &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    Environment:    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;none&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-96xfm &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ro&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             True
+  ContainersReady   True
+  PodScheduled      True
+Volumes:
+  default-token-96xfm:
+    Type:        Secret &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a volume populated by a Secret&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    SecretName:  default-token-96xfm
+    Optional:    &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+QoS Class:       BestEffort
+Node-Selectors:  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;none&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+Tolerations:     node.kubernetes.io/not-ready:NoExecute &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; 300s
+                 node.kubernetes.io/unreachable:NoExecute &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; 300s
+Events:
+  Type    Reason     Age   From                     Message
+  ----    ------     ----  ----                     -------
+  Normal  Scheduled  107s  default-scheduler        Successfully assigned default/demo-64f9f8d47d-7nzt4 to docker-desktop
+  Normal  Pulled     107s  kubelet, docker-desktop  Container image &lt;span class=&quot;token string&quot;&gt;&quot;cloudnatived/demo:hello&quot;&lt;/span&gt; already present on machine
+  Normal  Created    107s  kubelet, docker-desktop  Created container demo
+  Normal  Started    106s  kubelet, docker-desktop  Started container demo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# シャットダウン&lt;/span&gt;
+$ kubectl delete -f ./
+deployment.apps &lt;span class=&quot;token string&quot;&gt;&quot;demo&quot;&lt;/span&gt; deleted
+&lt;span class=&quot;token function&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;demo&quot;&lt;/span&gt; deleted&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;helm-kubernetesパッケージマネージャ&quot;&gt;&lt;a href=&quot;#helm-kubernetes%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3&quot; aria-label=&quot;helm kubernetesパッケージマネージャ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Helm: Kubernetesパッケージマネージャ&lt;/h2&gt;
+&lt;p&gt;【以下、書籍と異なるバージョンでコメントも個人のものが含まれている】
+aptやyum的なものだが、コンテナイメージ自体は含まれない。メタデータの管理。
+本はHelmのバージョンが2で古いっぽいので、バージョン3でやってみる。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;チャート&lt;br&gt;
+アプリケーションをk8sで実行するために必要なリソース定義が全て格納されたHelmパッケージ&lt;/li&gt;
+&lt;li&gt;リポジトリ&lt;br&gt;
+チャートを収集・共有できる場所&lt;br&gt;
+&lt;a href=&quot;https://hub.helm.sh/&quot;&gt;helm hub&lt;/a&gt;なるものがありChartが公開されている&lt;/li&gt;
+&lt;li&gt;リリース&lt;br&gt;
+チャートの特定のインスタンス&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://helm.sh/docs/intro/quickstart/&quot;&gt;公式&lt;/a&gt;を見つつ試す。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; helm
+$ helm version
+version.BuildInfo&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Version:&lt;span class=&quot;token string&quot;&gt;&quot;v3.1.1&quot;&lt;/span&gt;, GitCommit:&lt;span class=&quot;token string&quot;&gt;&quot;afe70585407b420d0097d07b21c47dc511525ac8&quot;&lt;/span&gt;, GitTreeState:&lt;span class=&quot;token string&quot;&gt;&quot;clean&quot;&lt;/span&gt;, GoVersion:&lt;span class=&quot;token string&quot;&gt;&quot;go1.13.8&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# https://github.com/cloudnativedevops/demo/tree/master/hello-helm/k8s/demo&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# リポジトリをcloneしてディレクトリに移動&lt;/span&gt;
+$ helm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; demo &lt;span class=&quot;token builtin class-name&quot;&gt;.&lt;/span&gt;
+NAME: demo
+LAST DEPLOYED: Mon Feb &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;17&lt;/span&gt;:18:54 &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;
+NAMESPACE: default
+STATUS: deployed
+REVISION: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+TEST SUITE: None
+
+$ helm list
+NAME	NAMESPACE	REVISION	UPDATED                            	STATUS  	CHART     	APP VERSION
+demo	default  	&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;       	&lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-02-24 &lt;span class=&quot;token number&quot;&gt;17&lt;/span&gt;:18:54.14197 +0900 JST	deployed	demo-1.0.1
+
+&lt;span class=&quot;token comment&quot;&gt;# kubectl port-forward deploy/demo 9999:8888は実施が必要&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; http://localhost:9999
+Hello, 世界&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;5章-リソースの管理&quot;&gt;&lt;a href=&quot;#5%E7%AB%A0-%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E7%AE%A1%E7%90%86&quot; aria-label=&quot;5章 リソースの管理 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5章 リソースの管理&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;コンテナには常にリソース制限とリソース要求を指定する&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;各Podに許容される最大・最小のリソース要件を把握して効果的にスケジュールしたい&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;リソース単位&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1CPU=1 AWS vCPU, 1Azure vCore, etc..&lt;/li&gt;
+&lt;li&gt;メモリ、メビバイト&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;リソース要求&lt;br&gt;
+リソース要求より少ないリソースしか利用できないノードでは、&lt;br&gt;
+PodはスケジューリングされずにPending状態となる&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;リソース制限&lt;br&gt;
+上限を超える使用は  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU: 処理能力を絞り込むスロットル処理の対象となる  &lt;/li&gt;
+&lt;li&gt;Mem: Pod強制終了、可能なら再スケジューリング&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;QoS&lt;br&gt;
+Pod間でリソースの取り合いになる状況ではQoSクラスで優先度が決まり、低いものから強制終了される&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Liveness probe&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;コンテナが生きているかを監視, /healthz pathにするのが慣例&lt;br&gt;
+起動直後のチェックで失敗する死のループを避ける必要がある&lt;/li&gt;
+&lt;li&gt;gRPC probe&lt;br&gt;
+grpc-health-probeツールを入れる&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Readiness probe&lt;br&gt;
+一時的にリクエストを処理できない状況であることを、k8sに伝える  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;このprobeが成功するまでk8sはこのPodにリクエストを送信しない&lt;/strong&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;必ずHTTP 200 OKのみを返すこと&lt;/strong&gt;  &lt;/li&gt;
+&lt;li&gt;/tmp/healtyのようなファイルでprobeする場合&lt;br&gt;
+&lt;strong&gt;ファイル削除することで一時的にサービスから外せる、障害調査時に役立つ&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# READYがPod内の準備できているコンテナ状況
+$ kubectl get pods
+NAME                    READY   STATUS    RESTARTS   AGE
+demo-774d7f849b-kgwfh   1/1     Running   0          27d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Pod Disruption Budget
+任意のタイミングで失っても構わないPod数を指定&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minAvairable&lt;/li&gt;
+&lt;li&gt;maxUnavairable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Namespace&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Namespaceの切り方、アプリケーション実行環境ごとなど&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 削除保護 &lt;a href=&quot;https://tech.jxpress.net/entry/2019/12/01/kubernetes-admission-webhook-getting-started&quot;&gt;Validating Admission Webhook&lt;/a&gt;、RBAC（アクセス制御）など&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 別のNamespaceのService同士は通信可能  【Network Policyでアクセス制御する必要ありそう】&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : ResourceQuotaでNamespaceに対してのリソース制限ができる（した方が良い）&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : LimitRange, デフォルトの制限をNamespaceに適用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ kubectl get namespaces
+NAME              STATUS   AGE
+default           Active   28d
+docker            Active   28d
+kube-node-lease   Active   28d
+kube-public       Active   28d
+kube-system       Active   28d
+$ kubectl get pods --namespace default
+NAME                    READY   STATUS    RESTARTS   AGE
+demo-774d7f849b-kgwfh   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          27d
+
+&lt;span class=&quot;token comment&quot;&gt;# Quota&lt;/span&gt;
+$ kubectl create namespace demo
+namespace/demo created
+
+$ &lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; resourcequota.yaml 
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: ResourceQuota
+  metadata:
+    name: pods-high
+  spec:
+    hard:
+      cpu: &lt;span class=&quot;token string&quot;&gt;&quot;1000&quot;&lt;/span&gt;
+      memory: 200Gi
+      pods: &lt;span class=&quot;token string&quot;&gt;&quot;10&quot;&lt;/span&gt;
+
+$ kubectl apply --namespace demo -f resourcequota.yaml 
+resourcequota/pods-high created
+
+$ kubectl get resourcequotas -n demo
+NAME        CREATED AT
+pods-high   &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-03-23T08:39:40Z&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Pod最適化
+PrometheusやGrafanaを使用して、リソース状況を可視化し適切なリソース要求を実施すべし&lt;br&gt;
+通常の運用状態で使用する最大量より少し多い値に設定しておく  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : Vertical Pod Autoscaler&lt;br&gt;
+リソース要求の理想的な値を算出するのに役立つ。&lt;br&gt;
+指定されたDeploymentを監視し、実際の使用量に基づいてPodのリソース要求を自動的に調整する。  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ノードの最適化&lt;br&gt;
+経験則  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : ノードは典型的なPodを少なくとも5つは実行できるサイズにする、10個~100個にする&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ストレージの最適化  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : IOPS要求についてはKubernetesでサポートされていない。&lt;br&gt;
+コスト削減のためにできる限り容量とIOPSが小さいディスクボリュームをプロビジョンする&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用率が低いリソースの発見&lt;br&gt;
+受信するトラフィックが極めて低いPodを発見する。&lt;br&gt;
+メトリクスを用いて使用率が低いPodを発見できる。  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完了したJobのクリーンアップ&lt;br&gt;
+TTL機能がある。TTLAfterFinished Feature Gate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;プリエンプティブ(スポット)インスタンスの使用&lt;br&gt;
+クラスタにとってコスト削減の良い選択肢だが、&lt;br&gt;
+常に非プリエンプションノードを組み合わせて利用する。&lt;br&gt;
+理論上は全て一気に落ちる可能性もあるので。&lt;br&gt;
+(スポットインスタンスは落ちる前に通知くるけどうまく入れ替えできないのか？)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Node Affinity&lt;br&gt;
+障害が許容できないPodをスポットにアサインしないようにできる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ワークロードバランスの維持&lt;br&gt;
+ノード障害などでレプリカがあるノードに偏る可能性がある。&lt;br&gt;
+Deschedulerでクラスタを再バランス化するために最善を尽くしてくれる。  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;6章-クラスタの運用&quot;&gt;&lt;a href=&quot;#6%E7%AB%A0-%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%81%AE%E9%81%8B%E7%94%A8&quot; aria-label=&quot;6章 クラスタの運用 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6章 クラスタの運用&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;クラスタのサイジングとスケーリング&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : マネージドサービスならマスターノードの可用性は考えなくてOK&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : ワーカーノードは最低2つは必要（AZ分散とかは勝手にやってくれるのか？）&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 最適なノードサイズはPod数やクラウドベンダなどで変わってくる  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ノードが大きいほど一般的には割安になる&lt;/li&gt;
+&lt;li&gt;異種混在ノード、大きなノード、小さなノードを用意して用途に応じて使い分ける方法もある&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : スケールダウン&lt;br&gt;
+取り除きたいノードをドレイン指示する。Podは徐々に別ノードに移動する。  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;PodDistruptionBudgetリソース  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minAvailable&lt;br&gt;
+利用可能な状態を維持すべきPodの最小数&lt;/li&gt;
+&lt;li&gt;maxUnavailable&lt;br&gt;
+任意の時点で利用できない状態が許されるPodの最大数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : オートスケール、変動が激しいのでなければ使用するな、手作業でスケーリングする方がいい&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 適合性テスト&lt;br&gt;
+クラスタが適切に設定されて最新の状態である、ことを確認するツール Sonobuoy&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 【ユニットテスト Open Policy Agent】  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://kenfdev.hateblo.jp/entry/2019/05/31/194614&quot;&gt;Conftest&lt;/a&gt;というものでyamlにルールを定義できる。&lt;br&gt;
+別にk8sだけにしか使えないものではなさそう。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 監査ロギング&lt;br&gt;
+クラスタAPIに対する全操作がログとして残る  &lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 【カオステスト】   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;chaos monkey
+spinnakerの利用が必須。argo CDでは使えないのか・・  &lt;/li&gt;
+&lt;li&gt;pumba&lt;br&gt;
+コンテナレベルのchaos monkey&lt;/li&gt;
+&lt;li&gt;Gremlin&lt;br&gt;
+Failure as a Service, あ、新しい・・&lt;br&gt;
+これ使ってみたいかも&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;7章-kubernetesの強力なツール&quot;&gt;&lt;a href=&quot;#7%E7%AB%A0-kubernetes%E3%81%AE%E5%BC%B7%E5%8A%9B%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB&quot; aria-label=&quot;7章 kubernetesの強力なツール permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7章 Kubernetesの強力なツール&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 【マネージドサービスのマスターノードのログの見方は？】&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : kubespy, クラスタ内の個別リソースを監視して何が起こるのかを表示できる。【使ってみたい】&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : &lt;a href=&quot;https://medium.com/@lestrrat/kubernetes%E4%BD%BF%E3%81%84%E3%81%AF%E5%85%A8%E5%93%A1-stern-%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%99%E3%81%B9%E3%81%8D-bc9d3eb2c321&quot;&gt;stern&lt;/a&gt;&lt;br&gt;
+高度なログストリーミングツール, 名前に一致する正規表現, コンテナ再起動でもストリーミング維持など&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : &lt;a href=&quot;https://qiita.com/go_vargo/items/df9084a080f66f9da0cc&quot;&gt;squash&lt;/a&gt;, ライブデバッグ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;kubectl&quot;&gt;&lt;a href=&quot;#kubectl&quot; aria-label=&quot;kubectl permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;kubectl&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;### リソースタイプ&lt;/span&gt;
+$ kubectl api-resources
+NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
+bindings                                                                      &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;         Binding
+componentstatuses                 cs                                          &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;        ComponentStatus
+configmaps                        cm                                          &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;         ConfigMap
+endpoints                         ep                                          &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;         Endpoints
+events                            ev                                          &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;         Event
+limitranges                       limits                                      &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;         LimitRange
+namespaces                        ns                                          &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;        Namespace
+nodes                             no                                          &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;        Node
+persistentvolumeclaims            pvc                                         &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;         PersistentVolumeClaim
+persistentvolumes                 &lt;span class=&quot;token function&quot;&gt;pv&lt;/span&gt;                                          &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;        PersistentVolume
+pods                              po                                          &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;         Pod
+&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+
+&lt;span class=&quot;token comment&quot;&gt;### 詳細情報表示&lt;/span&gt;
+$ kubectl get pods -o wide
+$ kubectl get pods -o json
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;apiVersion&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;v1&quot;&lt;/span&gt;,
+    &lt;span class=&quot;token string&quot;&gt;&quot;items&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;apiVersion&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;v1&quot;&lt;/span&gt;,
+            &lt;span class=&quot;token string&quot;&gt;&quot;kind&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Pod&quot;&lt;/span&gt;,
+            &lt;span class=&quot;token string&quot;&gt;&quot;metadata&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&quot;creationTimestamp&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;2020-02-24T08:18:54Z&quot;&lt;/span&gt;,
+                &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+$ kubectl get pods -o json &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; jq &lt;span class=&quot;token string&quot;&gt;&apos;.items[].metadata.name&apos;&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;&quot;demo-774d7f849b-kgwfh&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;### オブジェクトに関する記述&lt;/span&gt;
+$ kubectl describe pods demo-774d7f849b-kgwfh
+Name:           demo-774d7f849b-kgwfh
+Namespace:      default
+Priority:       &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+Node:           docker-desktop/192.168.65.3
+Start Time:     Mon, &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; Feb &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;17&lt;/span&gt;:18:54 +0900
+Labels:         &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+                &lt;span class=&quot;token assign-left variable&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;development
+                pod-template-hash&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;774d7f849b
+Annotations:    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;none&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+Status:         Running
+IP:             &lt;span class=&quot;token number&quot;&gt;10.1&lt;/span&gt;.0.16
+Controlled By:  ReplicaSet/demo-774d7f849b
+Containers:
+  demo:
+    Container ID:   docker://7d7d8b76136913dfb93c46c0ed73a85ab09aef490860b4c288af0bbed8bb9552
+    Image:          cloudnatived/demo:hello
+    Image ID:       docker-pullable://cloudnatived/demo@sha256:aeae1e551a6cbd60bcfd56c3b4ffec732c45b8012b7cb758c6c4a34779e0e7fb
+    Port:           &lt;span class=&quot;token number&quot;&gt;8888&lt;/span&gt;/TCP
+    Host Port:      &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;/TCP
+    State:          Running
+      Started:      Mon, &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; Feb &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;17&lt;/span&gt;:18:55 +0900
+    Ready:          True
+    Restart Count:  &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    Environment:
+      environment:  development
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-96xfm &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ro&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-96xfm:
+    Type:        Secret &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a volume populated by a Secret&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    SecretName:  default-token-96xfm
+    Optional:    &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+QoS Class:       BestEffort
+Node-Selectors:  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;none&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+Tolerations:     node.kubernetes.io/not-ready:NoExecute &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; 300s
+                 node.kubernetes.io/unreachable:NoExecute &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; 300s
+Events:          &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;none&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;マニフェストではなく直接的にリソースを変更するコマンドが存在するが使用禁止。&lt;br&gt;
+GitOps！！&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;### yamlとしてマニフェストを吐き出せる。&lt;/span&gt;
+$ kubectl get deployments demo -o yaml
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: &lt;span class=&quot;token string&quot;&gt;&quot;1&quot;&lt;/span&gt;
+  creationTimestamp: &lt;span class=&quot;token string&quot;&gt;&quot;2020-02-24T08:18:54Z&quot;&lt;/span&gt;
+  generation: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+  name: demo
+  namespace: default
+  resourceVersion: &lt;span class=&quot;token string&quot;&gt;&quot;29478&quot;&lt;/span&gt;
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/demo
+  uid: 9725c9b0-5a98-485a-b4a0-a52ffeee87c2
+spec:
+  progressDeadlineSeconds: &lt;span class=&quot;token number&quot;&gt;600&lt;/span&gt;
+  replicas: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+
+&lt;span class=&quot;token comment&quot;&gt;### リソースの差分チェック&lt;/span&gt;
+$ kubectl &lt;span class=&quot;token function&quot;&gt;diff&lt;/span&gt; -f hoge.yaml 
+&lt;span class=&quot;token function&quot;&gt;diff&lt;/span&gt; -u -N /var/folders/d5/0kw6v0c52sn06yqpr168hgkh0000gn/T/LIVE-517569565/extensions.v1beta1.Deployment.default.demo /var/folders/d5/0kw6v0c52sn06yqpr168hgkh0000gn/T/MERGED-018551000/extensions.v1beta1.Deployment.default.demo
+--- /var/folders/d5/0kw6v0c52sn06yqpr168hgkh0000gn/T/LIVE-517569565/extensions.v1beta1.Deployment.default.demo  &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-03-24 &lt;span class=&quot;token number&quot;&gt;18&lt;/span&gt;:53:51.000000000 +0900
++++ /var/folders/d5/0kw6v0c52sn06yqpr168hgkh0000gn/T/MERGED-018551000/extensions.v1beta1.Deployment.default.demo        &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-03-24 &lt;span class=&quot;token number&quot;&gt;18&lt;/span&gt;:53:51.000000000 +0900
+@@ -4,7 +4,10 @@
+   annotations:
+     deployment.kubernetes.io/revision: &lt;span class=&quot;token string&quot;&gt;&quot;1&quot;&lt;/span&gt;
+   creationTimestamp: &lt;span class=&quot;token string&quot;&gt;&quot;2020-02-24T08:18:54Z&quot;&lt;/span&gt;
+-  generation: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
++  generation: &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
++  labels:
++    app: demo
++    environment: development
+   name: demo
+   namespace: default
+   resourceVersion: &lt;span class=&quot;token string&quot;&gt;&quot;29478&quot;&lt;/span&gt;
+@@ -12,7 +15,7 @@
+   uid: 9725c9b0-5a98-485a-b4a0-a52ffeee87c2
+ spec:
+   progressDeadlineSeconds: &lt;span class=&quot;token number&quot;&gt;600&lt;/span&gt;
+-  replicas: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
++  replicas: &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+   revisionHistoryLimit: &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;
+   selector:
+     matchLabels:
+&lt;span class=&quot;token builtin class-name&quot;&gt;exit&lt;/span&gt; status &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;### コンテナのログをみる&lt;/span&gt;
+kubectl logs  --tail&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt; demo-774d7f849b-kgwfh
+
+&lt;span class=&quot;token comment&quot;&gt;## リソースの差分チェック&lt;/span&gt;
+$ kubectl &lt;span class=&quot;token function&quot;&gt;diff&lt;/span&gt; -f hoge.yaml 
+&lt;span class=&quot;token function&quot;&gt;diff&lt;/span&gt; -u -N /var/folders/d5/0kw6v0c52sn06yqpr168hgkh0000gn/T/LIVE-517569565/extensions.v1beta1.Deployment.default.demo /var/folders/d5/0kw6v0c52sn06yqpr168hgkh0000gn/T/MERGED-018551000/extensions.v1beta1.Deployment.default.demo
+--- /var/folders/d5/0kw6v0c52sn06yqpr168hgkh0000gn/T/LIVE-517569565/extensions.v1beta1.Deployment.default.demo  &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-03-24 &lt;span class=&quot;token number&quot;&gt;18&lt;/span&gt;:53:51.000000000 +0900
++++ /var/folders/d5/0kw6v0c52sn06yqpr168hgkh0000gn/T/MERGED-018551000/extensions.v1beta1.Deployment.default.demo        &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-03-24 &lt;span class=&quot;token number&quot;&gt;18&lt;/span&gt;:53:51.000000000 +0900
+@@ -4,7 +4,10 @@
+   annotations:
+     deployment.kubernetes.io/revision: &lt;span class=&quot;token string&quot;&gt;&quot;1&quot;&lt;/span&gt;
+   creationTimestamp: &lt;span class=&quot;token string&quot;&gt;&quot;2020-02-24T08:18:54Z&quot;&lt;/span&gt;
+-  generation: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
++  generation: &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
++  labels:
++    app: demo
++    environment: development
+   name: demo
+   namespace: default
+   resourceVersion: &lt;span class=&quot;token string&quot;&gt;&quot;29478&quot;&lt;/span&gt;
+@@ -12,7 +15,7 @@
+   uid: 9725c9b0-5a98-485a-b4a0-a52ffeee87c2
+ spec:
+   progressDeadlineSeconds: &lt;span class=&quot;token number&quot;&gt;600&lt;/span&gt;
+-  replicas: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
++  replicas: &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+   revisionHistoryLimit: &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;
+   selector:
+     matchLabels:
+&lt;span class=&quot;token builtin class-name&quot;&gt;exit&lt;/span&gt; status
+
+&lt;span class=&quot;token comment&quot;&gt;### コンテナのログをみる&lt;/span&gt;
+$ kubectl logs  --tail&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt; demo-774d7f849b-kgwfh
+&lt;span class=&quot;token comment&quot;&gt;# --since, --timestampsなどあり&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;### コンテナへのアタッチ&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# 直接ログをコンテナにアタッチして見る。&lt;/span&gt;
+kubectl attach demo-774d7f849b-kgwfh
+
+&lt;span class=&quot;token comment&quot;&gt;### Context&lt;/span&gt;
+$ kubectl config get-contexts
+CURRENT   NAME                 CLUSTER          AUTHINFO         NAMESPACE
+*         docker-desktop       docker-desktop   docker-desktop   
+          docker-for-desktop   docker-desktop   docker-desktop  
+
+$ kubectl cluster-info
+Kubernetes master is running at https://kubernetes.docker.internal:6443
+KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+$ kubectl config use-context docker-for-desktop
+Switched to context &lt;span class=&quot;token string&quot;&gt;&quot;docker-for-desktop&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;.&lt;/span&gt;
+$ kubectl config get-contexts
+CURRENT   NAME                 CLUSTER          AUTHINFO         NAMESPACE
+          docker-desktop       docker-desktop   docker-desktop   
+*         docker-for-desktop   docker-desktop   docker-desktop
+
+$ kubectl config set-context myapp --cluster&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;gke --namemspace&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;myapp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;busybox&quot;&gt;&lt;a href=&quot;#busybox&quot; aria-label=&quot;busybox permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;busybox&lt;/h2&gt;
+&lt;p&gt;色々な調査でコンテナと同じネットワーク上に配置してhogehogeするときに便利。  &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ kubectl run busybox --image&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;busybox:1.28 --rm -it --restart&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;Never /bin/sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;8章-コンテナの実行&quot;&gt;&lt;a href=&quot;#8%E7%AB%A0-%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%AE%E5%AE%9F%E8%A1%8C&quot; aria-label=&quot;8章 コンテナの実行 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;8章 コンテナの実行&lt;/h1&gt;
+&lt;h2 id=&quot;pod-1&quot;&gt;&lt;a href=&quot;#pod-1&quot; aria-label=&quot;pod 1 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pod&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;k8sのスケジューリングの単位&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pod内に複数のコンテナが存在し得る&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一緒にしないと正常に動作しないのであればPodでまとめる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ダイジェストを利用すると必ずイメージを固定して使える&lt;/li&gt;
+&lt;li&gt;securityContext: runAsUser, で非rootユーザとして実行&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : readOnlyRootFilesystemをtrueにしておく&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : alllowPrivilegeEscalationをfalseにしておく&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : ケイパビリティは必要なものだけ付与する&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : PodSecurityPolicyでクラスタ全てにセキュリティポリシーをアタッチできる&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 再起動ポリシ, restartPolicy: OnFailure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;    &lt;span class=&quot;token key atrule&quot;&gt;spec&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;containers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# 複数コンテナを指定できる&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; demo
+        &lt;span class=&quot;token key atrule&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; cloudnatived/demo&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;hello
+        &lt;span class=&quot;token key atrule&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;containerPort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8888&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ボリューム&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;emptyDirボリューム  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pod内での共有は可能&lt;br&gt;
+ただし、ロック機構がないのでnfsなど使う必要がある&lt;/li&gt;
+&lt;li&gt;Pod削除で消去される一時ボリューム&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;永続ボリューム&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ステートフルになるのでだめ&lt;/li&gt;
+&lt;li&gt;KubernetesでDBを実行することは非推奨&lt;/li&gt;
+&lt;li&gt;PersistentVolume, は基本使うな&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;9章-podの管理&quot;&gt;&lt;a href=&quot;#9%E7%AB%A0-pod%E3%81%AE%E7%AE%A1%E7%90%86&quot; aria-label=&quot;9章 podの管理 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;9章 Podの管理&lt;/h1&gt;
+&lt;h2 id=&quot;label&quot;&gt;&lt;a href=&quot;#label&quot; aria-label=&quot;label permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Label&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Label自体はユーザ用のタグ付けに過ぎない, リソースを識別する&lt;/li&gt;
+&lt;li&gt;app, environment, version, roleなどをつける&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;セレクタ&quot;&gt;&lt;a href=&quot;#%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF&quot; aria-label=&quot;セレクタ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;セレクタ&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ kubectl get pods --show-labels
+NAME                    READY   STATUS    RESTARTS   AGE   LABELS
+demo-774d7f849b-kgwfh   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          29d   &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo,environment&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;development,pod-template-hash&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;774d7f849b
+
+&lt;span class=&quot;token comment&quot;&gt;# セレクタで一致条件を記述して結果を絞る&lt;/span&gt;
+$ kubectl get pods -l &lt;span class=&quot;token assign-left variable&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;demo
+NAME                    READY   STATUS    RESTARTS   AGE
+demo-774d7f849b-kgwfh   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          29d
+
+&lt;span class=&quot;token comment&quot;&gt;# !=&lt;/span&gt;
+$ kubectl get pods -l app&lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt;demo2
+NAME                    READY   STATUS    RESTARTS   AGE
+demo-774d7f849b-kgwfh   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          29d
+
+&lt;span class=&quot;token comment&quot;&gt;# in 集合&lt;/span&gt;
+$ kubectl get pods -l &lt;span class=&quot;token string&quot;&gt;&quot;environment in (development)&quot;&lt;/span&gt;
+NAME                    READY   STATUS    RESTARTS   AGE
+demo-774d7f849b-kgwfh   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          29d
+
+$ kubectl get pods -l &lt;span class=&quot;token string&quot;&gt;&quot;environment notin (staging)&quot;&lt;/span&gt;
+NAME                    READY   STATUS    RESTARTS   AGE
+demo-774d7f849b-kgwfh   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          29d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;node-affinity&quot;&gt;&lt;a href=&quot;#node-affinity&quot; aria-label=&quot;node affinity permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Node Affinity&lt;/h2&gt;
+&lt;p&gt;【この設定だいぶ大変だな。。割り当てのされ方を考えつつノードに割り当てるのか・・、ノウハウ必要】&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : Pod Affinityが必須な場合をのぞいて使わない方がいい&lt;/li&gt;
+&lt;li&gt;required, prefferdがある&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ハードAffinity  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;特定のAZを指定して、Podがそのゾーンのみにスケジューリングされるようにする&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ソフトAffinity  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;weightを1から100までの数値で指定してスケジュール先の優先度を決定する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Podの同居
+podAffinity: WebサーバーPodとRedis Podの同居を指定するなど&lt;br&gt;
+余計なネットワーク経由の通信が発生しないメリットがある&lt;br&gt;
+ソフト・ハードどちらも指定できる  &lt;/li&gt;
+&lt;li&gt;Podの分離&lt;br&gt;
+podAntiAffinity: serverのノード間分散を行いたいようなケース&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;taint-toleration&quot;&gt;&lt;a href=&quot;#taint-toleration&quot; aria-label=&quot;taint toleration permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Taint, Toleration&lt;/h2&gt;
+&lt;p&gt;【試してみる】&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# テスト用に新しくnamespaceを切る&lt;/span&gt;
+$ kubectl create namespace fortaint
+namespace/fortaint created
+
+&lt;span class=&quot;token comment&quot;&gt;# Nodeのtaint状態&lt;/span&gt;
+$ kubectl describe node docker-desktop &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; Taint
+Taints:             &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;none&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Taint追加&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Taintを追加すると、 dedicated=trueが容認(Toleration)されているPodしかNodeに割り当てできなくなる&lt;/span&gt;
+$ kubectl taint nodes docker-desktop &lt;span class=&quot;token assign-left variable&quot;&gt;dedicated&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;true:NoSchedule
+node/docker-desktop tainted
+
+&lt;span class=&quot;token comment&quot;&gt;# Taintが設定されている&lt;/span&gt;
+$ kubectl describe node docker-desktop &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; Taint
+Taints:             &lt;span class=&quot;token assign-left variable&quot;&gt;dedicated&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;true:NoSchedule
+
+&lt;span class=&quot;token comment&quot;&gt;# fortaint namespaceでdemo Podを作成&lt;/span&gt;
+$ kubectl apply --namespace fortaint -f deployment.yaml 
+deployment.apps/demo created
+
+&lt;span class=&quot;token comment&quot;&gt;# Taintのせいでスケジュールできない！&lt;/span&gt;
+$ kubectl describe pod demo -n fortaint &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -A &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt; Events
+Events:
+  Type     Reason            Age                  From               Message
+  ----     ------            ----                 ----               -------
+  Warning  FailedScheduling  70s &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x2 over 2m22s&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;  default-scheduler  &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;/1 nodes are available: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; had taints that the pod didn&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;&apos;t tolerate.
+
+&lt;span class=&quot;token comment&quot;&gt;# Taintの設定をyamlに追加&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; EOS &lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt; deployment.yaml
+      tolerations:
+      - key: &lt;span class=&quot;token string&quot;&gt;&quot;dedicated&quot;&lt;/span&gt;
+        operator: &lt;span class=&quot;token string&quot;&gt;&quot;Equal&quot;&lt;/span&gt;
+        value: &lt;span class=&quot;token string&quot;&gt;&quot;true&quot;&lt;/span&gt;
+        effect: &lt;span class=&quot;token string&quot;&gt;&quot;NoSchedule&quot;&lt;/span&gt;
+EOS
+
+&lt;span class=&quot;token comment&quot;&gt;# applyする&lt;/span&gt;
+$ kubectl apply --namespace fortaint -f deployment.yaml 
+deployment.apps/demo configured
+$ kubectl describe pod demo -n fortaint &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -A &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt; Events
+Events:
+  Type    Reason     Age   From                     Message
+  ----    ------     ----  ----                     -------
+  Normal  Scheduled  7s    default-scheduler        Successfully assigned fortaint/demo-85c9b4589b-dg9vm to docker-desktop
+  Normal  Pulled     6s    kubelet, docker-desktop  Container image &lt;span class=&quot;token string&quot;&gt;&quot;cloudnatived/demo:hello&quot;&lt;/span&gt; already present on machine
+  Normal  Created    6s    kubelet, docker-desktop  Created container demo
+  Normal  Started    6s    kubelet, docker-desktop  Started container demo
+
+&lt;span class=&quot;token comment&quot;&gt;# ノードにスケジュールされてdemo Podが起動した&lt;/span&gt;
+$ kubectl get pods -n fortaint
+NAME                    READY   STATUS    RESTARTS   AGE
+demo-85c9b4589b-dg9vm   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          26s
+
+&lt;span class=&quot;token comment&quot;&gt;# Taint設定を削除しておく&lt;/span&gt;
+$ kubectl taint nodes docker-desktop dedicated:NoSchedule-
+node/docker-desktop untainted&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml:deployment.yaml&quot;&gt;&lt;pre class=&quot;language-yaml:deployment.yaml&quot;&gt;&lt;code class=&quot;language-yaml:deployment.yaml&quot;&gt;apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo
+  labels:
+    app: demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      containers:
+      - name: demo
+        image: cloudnatived/demo:hello
+        ports:
+        - containerPort: 8888&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;podコントローラ&quot;&gt;&lt;a href=&quot;#pod%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9&quot; aria-label=&quot;podコントローラ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Podコントローラ&lt;/h2&gt;
+&lt;p&gt;【実際にやってみないと本番で使えるのかわからないな】&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ReplicaSet&lt;br&gt;
+既出、Podについてレプリカのグループを管理する&lt;br&gt;
+同じ仕様のPodのレプリカ数を管理
+Deploymentによって生成・管理されて、バージョン差分が発生すると新しいReplicaSetの作成が行われる&lt;/li&gt;
+&lt;li&gt;DaemonSet
+利用例：ロギングエージェント&lt;br&gt;
+ロギングエージェントとして機能する追加コンテナを全てのPodで実行する（サイドカー）  &lt;/li&gt;
+&lt;li&gt;StatefulSet
+利用例：Redis, MongoDB, Cassandra&lt;br&gt;
+【ステートフルなものは使いたくはない、データ消えそうで怖い】&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Job&lt;br&gt;
+利用例:バッチ処理タスク、キューワーカ  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CronJob&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Horizontal Pod AutoScaler&lt;br&gt;
+メトリクスを監視して、レプリカ数の増減の判断を自動で行う&lt;br&gt;
+【ECSよりも柔軟にメトリクス定義でオートスケールできそう、メモリ使用率やアプリケーションからのメトリクス利用可能】&lt;/li&gt;
+&lt;li&gt;PodPreset&lt;br&gt;
+【Secret、Volume、VolumeMountや環境変数など、特定の情報を注入するためのオブジェクト】&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Operator, Custom Resource Definition(CRD)&lt;br&gt;
+【むず・・, &lt;a href=&quot;https://qiita.com/cvusk/items/773e222e0971a5391a51&quot;&gt;https://qiita.com/cvusk/items/773e222e0971a5391a51&lt;/a&gt; わかりやすい！！】 &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Custome Controller&lt;br&gt;
+Custom Resourceを操作するためのコントローラ  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clint-goで実装&lt;/li&gt;
+&lt;li&gt;code-generatorは、kubernetes styled APIを生成する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CRD
+Custom Resourceを定義する&lt;/li&gt;
+&lt;li&gt;Operator
+K8s環境を監視し、その現在の状態を使用して数ミリ秒で意思決定を行うソフトウェアベンダーのエンジニアリングチームのようなもの
+【わかりやすい、&lt;a href=&quot;https://qiita.com/MahoTakara/items/af4ad8ab69c24102bd72%E3%80%91&quot;&gt;https://qiita.com/MahoTakara/items/af4ad8ab69c24102bd72】&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;ingressリソース&quot;&gt;&lt;a href=&quot;#ingress%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9&quot; aria-label=&quot;ingressリソース permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ingressリソース&lt;/h2&gt;
+&lt;p&gt;Service前段のロードバランサ&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ファンアウト、ルールに応じた、トラフィックの転送&lt;/li&gt;
+&lt;li&gt;TLS終端&lt;/li&gt;
+&lt;li&gt;Ingressコントローラ、ALBやGLBCでリクエストを待ち受ける&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;istio&quot;&gt;&lt;a href=&quot;#istio&quot; aria-label=&quot;istio permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Istio&lt;/h2&gt;
+&lt;p&gt;オライリーから Istio: Up and Runningという本が出たと書いてある。&lt;br&gt;
+一冊の本が必要な内容量ということ&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;トラフィック制御&lt;/li&gt;
+&lt;li&gt;対障害性処理&lt;/li&gt;
+&lt;li&gt;可視化、分散トレース&lt;/li&gt;
+&lt;li&gt;認証、セキュリティ機能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;envoy&quot;&gt;&lt;a href=&quot;#envoy&quot; aria-label=&quot;envoy permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Envoy&lt;/h2&gt;
+&lt;p&gt;高性能なプロキシ。&lt;br&gt;
+ALBなどのマネージドサービスの自由度では足りないケースで利用する&lt;/p&gt;
+&lt;h1 id=&quot;10章-設定と機密情報&quot;&gt;&lt;a href=&quot;#10%E7%AB%A0-%E8%A8%AD%E5%AE%9A%E3%81%A8%E6%A9%9F%E5%AF%86%E6%83%85%E5%A0%B1&quot; aria-label=&quot;10章 設定と機密情報 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;10章 設定と機密情報&lt;/h1&gt;
+&lt;h2 id=&quot;configmap&quot;&gt;&lt;a href=&quot;#configmap&quot; aria-label=&quot;configmap permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ConfigMap&lt;/h2&gt;
+&lt;p&gt;設定データを保存するための主要なオブジェクト。&lt;br&gt;
+ConfigMapからファイルや環境変数経由で設定データをアプリケーションに共有できる。&lt;br&gt;
+envFromを用いることで一括で環境変数を設定することができる。  &lt;/p&gt;
+&lt;p&gt;【GitOpsの観点からローカルPCの環境変数を引き渡すようなことはしない方が良さそう】&lt;br&gt;
+【Argo CDだとこの設定ファイルの変更も捉えてDeploymentのスペックを更新して、Podの再起動できるのか？】&lt;br&gt;
+【Argoについては13章をみてください】&lt;/p&gt;
+&lt;h2 id=&quot;secret&quot;&gt;&lt;a href=&quot;#secret&quot; aria-label=&quot;secret permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Secret&lt;/h2&gt;
+&lt;p&gt;ConfigMapと同じような設定の仕方だがログやdescribeで値は表示されない。&lt;br&gt;
+保存データは暗号化されており、RBACでアクセス制御を適切に行う。  &lt;/p&gt;
+&lt;h3 id=&quot;機密情報管理の戦略&quot;&gt;&lt;a href=&quot;#%E6%A9%9F%E5%AF%86%E6%83%85%E5%A0%B1%E7%AE%A1%E7%90%86%E3%81%AE%E6%88%A6%E7%95%A5&quot; aria-label=&quot;機密情報管理の戦略 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;機密情報管理の戦略&lt;/h3&gt;
+&lt;p&gt;マニフェストファイルは平文で書かれているのでGit管理するのはとても危険。&lt;br&gt;
+機密データはどのように管理すべきか？&lt;br&gt;
+【GitOpsするならSOPSで暗号化したファイルをGit管理＋デプロイ時に複合するのが良さそう】  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;バージョン管理を通じた機密情報の暗号化  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;暗号化してコミットし、デプロイ時に複合化する  &lt;/li&gt;
+&lt;li&gt;オペミスによる平文のコミットなどの危険性は残る  &lt;/li&gt;
+&lt;li&gt;様々な案件で同じ機密情報を管理する場合、それぞれでコピペが発生する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;リモート保存  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;S3などのセキュアなファイルストレージに格納する  &lt;/li&gt;
+&lt;li&gt;【GitOpsの文脈だと、全てがGitでバージョン管理され、ログが取られていないのでだめでは？】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;専用ツール
+CDツールのArgo自体は機密データの専用ツールを提供していない  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hashicorp Vault&lt;br&gt;
+いきなり利用することは推奨されないらしい&lt;br&gt;
+管理が必要な機密情報はそう多くないかもしれない&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOPS  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;軽量暗号化ツール&lt;/li&gt;
+&lt;li&gt;Azure Key Vault, KMS, Cloud KMSなどのクラウドの暗号化バックエンドをサポート&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;helm-secrets
+helmで利用できる暗号・複合化プラグイン&lt;br&gt;
+内部ではSOPSを利用している&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;11章-セキュリティとバックアップ&quot;&gt;&lt;a href=&quot;#11%E7%AB%A0-%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%81%A8%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97&quot; aria-label=&quot;11章 セキュリティとバックアップ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;11章 セキュリティとバックアップ&lt;/h1&gt;
+&lt;h2 id=&quot;アクセス制御&quot;&gt;&lt;a href=&quot;#%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E5%88%B6%E5%BE%A1&quot; aria-label=&quot;アクセス制御 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;アクセス制御&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;stagingとproductionでアクセス権限を分けたい&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stagingとproductionのクラスタを分ける&lt;/li&gt;
+&lt;li&gt;クラスタごとに権限を分ける&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RBAC(Role-Based Acess Control)
+特定のパーミッションを特定のユーザに与える&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# RBAC設定されている&lt;/span&gt;
+$ kubectl describe pod  -n kube-system &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; RBAC
+      --authorization-mode&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;Node,RBAC&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;【適切な設定はノウハウが必要そう、実戦で頑張る】&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ロール&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;namespace, クラスタ全体を対象として指定可能&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cluster-role&lt;br&gt;
+管理者&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;インターネット公開される可能性のあるDashboardなどに与えてはならない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;view&lt;/li&gt;
+&lt;li&gt;edit
+新しいロールやパーミッションを与えることはできない
+CDツールに適用するロールはedit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ロールバインディング
+ユーザにロールをバインディングする&lt;/p&gt;
+&lt;h2 id=&quot;セキュリティスキャン&quot;&gt;&lt;a href=&quot;#%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3&quot; aria-label=&quot;セキュリティスキャン permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;セキュリティスキャン&lt;/h2&gt;
+&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : Clair, 【Trivy】, 【anchore】
+コンテナスキャナ、安全でないソフトウェアのスキャンをしてくれる&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 【Harbor】
+k8s上で運用できるリポジトリ、コンテナイメージの脆弱性チェックつき&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 【falco】
+侵入検知・異常検知のOSS&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : 【sysdig】
+統合的なセキュリティ・モニタリングプラットフォーム&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;バックアップ&quot;&gt;&lt;a href=&quot;#%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97&quot; aria-label=&quot;バックアップ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;バックアップ&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;etcdのバックアップ（マネージドなら不要）&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : Velero
+&lt;a href=&quot;https://blog.stormcat.io/post/velero-backup/&quot;&gt;https://blog.stormcat.io/post/velero-backup/&lt;/a&gt;
+クラスタの状態と永続データをバックアップしてS3などに配置する、復元も可能&lt;br&gt;
+障害時に慌てないように定期的な復元テストを実施するべき&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;【ストレージ】&quot;&gt;&lt;a href=&quot;#%E3%80%90%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%80%91&quot; aria-label=&quot;【ストレージ】 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;【ストレージ】&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rook
+ストレージを提供する
+&lt;a href=&quot;https://qiita.com/ysakashita/items/f27c0948b4e339c5d1e0&quot;&gt;https://qiita.com/ysakashita/items/f27c0948b4e339c5d1e0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;ステータス監視&quot;&gt;&lt;a href=&quot;#%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E7%9B%A3%E8%A6%96&quot; aria-label=&quot;ステータス監視 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ステータス監視&lt;/h2&gt;
+&lt;h3 id=&quot;kubectl-1&quot;&gt;&lt;a href=&quot;#kubectl-1&quot; aria-label=&quot;kubectl 1 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;kubectl&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# コントロールプレーン&lt;/span&gt;
+$ kubectl get componentstatuses
+NAME                 STATUS    MESSAGE             ERROR
+controller-manager   Healthy   ok                  
+scheduler            Healthy   ok                  
+etcd-0               Healthy   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;health&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+&lt;span class=&quot;token comment&quot;&gt;# ノード&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# NotReadyだと異常&lt;/span&gt;
+$ kubectl get nodes
+NAME             STATUS   ROLES    AGE   VERSION
+docker-desktop   Ready    master   32d   v1.15.5
+
+$ kubectl get pods --all-namespaces
+NAMESPACE     NAME                                     READY   STATUS    RESTARTS   AGE
+default       demo-774d7f849b-kgwfh                    &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          31d
+docker        compose-7b7c5cbbcc-jsgv9                 &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          32d
+docker        compose-api-dbbf7c5db-p8swb              &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          32d
+fortaint      demo-85c9b4589b-dg9vm                    &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          43h
+hoge          demo-64f9f8d47d-7v9qk                    &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          43h
+kube-system   coredns-5c98db65d4-cn9kx                 &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;          32d
+kube-system   coredns-5c98db65d4-tl66p                 &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;          32d
+kube-system   etcd-docker-desktop                      &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          32d
+kube-system   kube-apiserver-docker-desktop            &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          32d
+kube-system   kube-controller-manager-docker-desktop   &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;         32d
+kube-system   kube-proxy-hsq45                         &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;          32d
+kube-system   kube-scheduler-docker-desktop            &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/1     Running   &lt;span class=&quot;token number&quot;&gt;21&lt;/span&gt;         32d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;クラウドプロバイダ のコンソール&lt;/li&gt;
+&lt;li&gt;K8s Dashboard&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;モニタリングツール&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : Prometheus+Graphana
+【圧倒的に利用されている印象、監視はこれ一択では？】&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : Weave Scope
+クラスタ・コンテナの視覚化・操作ができるのが有能みたい&lt;br&gt;
+【ArgoでもPodまでは可視化できるしDashboardでも可視化できるがこいつが差別化する機能を持っているのか？】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;12章-kubernetesアプリケーションのデプロイ&quot;&gt;&lt;a href=&quot;#12%E7%AB%A0-kubernetes%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4&quot; aria-label=&quot;12章 kubernetesアプリケーションのデプロイ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;12章 Kubernetesアプリケーションのデプロイ&lt;/h1&gt;
+&lt;p&gt;生のYAMLファイルだと、変数の取り扱いが厳しい。&lt;br&gt;
+Helmはこれを解決するための手段。  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Helmチャート&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;テンプレート&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;【Argo CDでのHelmの取り扱いについては別途まとめる】&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;デフォルト値を上書きするためのyamlを準備する？  &lt;/li&gt;
+&lt;li&gt;helm upgradeはArgoの方で勝手に面倒みてくれる？&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;secrets+helmの取り扱い, Argo CDではsecretsの機能は個別で持っていない&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;helm-secrets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HelmfilemとArgoの使い合わせはできる？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;13章-開発ワークフロー&quot;&gt;&lt;a href=&quot;#13%E7%AB%A0-%E9%96%8B%E7%99%BA%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC&quot; aria-label=&quot;13章 開発ワークフロー permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;13章 開発ワークフロー&lt;/h1&gt;
+&lt;h1 id=&quot;14章-kubernetesにおける継続的デプロイ&quot;&gt;&lt;a href=&quot;#14%E7%AB%A0-kubernetes%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%B6%99%E7%B6%9A%E7%9A%84%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4&quot; aria-label=&quot;14章 kubernetesにおける継続的デプロイ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;14章 Kubernetesにおける継続的デプロイ&lt;/h1&gt;
+&lt;p&gt;13,14章は内容が似ているのでまとめる。&lt;br&gt;
+開発ツールの前に、GitOpsについて考えをまとめる。CI/CDは本ではなくほぼ自分で調べた内容です。&lt;br&gt;
+本の内容は少し古そうです。  &lt;/p&gt;
+&lt;p&gt;CDツールはOSSのみまとめる。  &lt;/p&gt;
+&lt;h2 id=&quot;【gitops】&quot;&gt;&lt;a href=&quot;#%E3%80%90gitops%E3%80%91&quot; aria-label=&quot;【gitops】 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;【&lt;a href=&quot;https://cdn-ak.f.st-hatena.com/images/fotolife/b/bobchan1915/20181206/20181206044001.png&quot;&gt;GitOps&lt;/a&gt;】&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-ak.f.st-hatena.com/images/fotolife/b/bobchan1915/20181206/20181206044001.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;gitopsとは？&quot;&gt;&lt;a href=&quot;#gitops%E3%81%A8%E3%81%AF%EF%BC%9F&quot; aria-label=&quot;gitopsとは？ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GitOpsとは？&lt;/h3&gt;
+&lt;p&gt;自分の理解 &lt;strong&gt;インフラもアプリと同じように全ての設定・変更がGit管理され、Gitの変更がそのままクラスタに同期されるべき、と言う考え方&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;この考えに乗っかると、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NG: 手動でkubectl applyやhelmの更新などをする&lt;/li&gt;
+&lt;li&gt;NG: secret情報をS3で管理する（Gitでのバージョン管理はされなくなるため）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;で、Gitファイル状態 = 本番状態、を実現できるのであればArgo CDを使おうと、Circle CIで全部無理やり自作で作り込もうとどちらでもGitOpsである  &lt;/p&gt;
+&lt;h3 id=&quot;gitopsツールはなんで必要？&quot;&gt;&lt;a href=&quot;#gitops%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AF%E3%81%AA%E3%82%93%E3%81%A7%E5%BF%85%E8%A6%81%EF%BC%9F&quot; aria-label=&quot;gitopsツールはなんで必要？ permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GitOpsツールはなんで必要？&lt;/h3&gt;
+&lt;p&gt;Argo CDのようにGitの設定ファイル = 本番状態に特化して、デプロイを担当する機能を持つCDツールを使うとGitOpsが実現しやすい。
+Argo CDはあくまでk8sのCDに特化しており、CI（テスト、build）は専門外。&lt;br&gt;
+なのでGithub actionsなどと組み合わせて利用する事になる。&lt;br&gt;
+一応Argo CIというプロジェクトもあるがまだ開発中。&lt;/p&gt;
+&lt;h4 id=&quot;argo-cdの特徴&quot;&gt;&lt;a href=&quot;#argo-cd%E3%81%AE%E7%89%B9%E5%BE%B4&quot; aria-label=&quot;argo cdの特徴 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Argo CDの特徴&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;カナリア/BGデプロイ、ロールバック（好きな時点のGit状態にロールバック）
+maxSurgeやmaxUnnavailableの設定はどうやるのか？&lt;/li&gt;
+&lt;li&gt;helmや様々なartifactの利用（特定のツール特化でCDを作り込まなくて良い）&lt;/li&gt;
+&lt;li&gt;複数クラスタ管理&lt;/li&gt;
+&lt;li&gt;RBACポリシーの扱い&lt;/li&gt;
+&lt;li&gt;アプリケーションリソースの健康状態のチェック
+【他の監視ツールとの使い分けどうする？】&lt;/li&gt;
+&lt;li&gt;Drift Detection、つまりGit状態と本番で差異があれば検知・可視化&lt;/li&gt;
+&lt;li&gt;UI付き&lt;/li&gt;
+&lt;li&gt;CIツールと組み合わせて使うためのCLI付き&lt;/li&gt;
+&lt;li&gt;Webhook(GitHub, etc..)&lt;/li&gt;
+&lt;li&gt;Access tokens&lt;/li&gt;
+&lt;li&gt;PreSync, Sync, PostSync hooks&lt;/li&gt;
+&lt;li&gt;APIなどの監査ログ&lt;/li&gt;
+&lt;li&gt;Prometheusメトリクス&lt;/li&gt;
+&lt;li&gt;パラメータ overrides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;他にも、Argo workflow, UI, CI, Eventsなどプロジェクトが走っている。  &lt;/p&gt;
+&lt;h4 id=&quot;tekton-pipelines（cicd）&quot;&gt;&lt;a href=&quot;#tekton-pipelines%EF%BC%88cicd%EF%BC%89&quot; aria-label=&quot;tekton pipelines（cicd） permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tekton pipelines（CI/CD）&lt;/h4&gt;
+&lt;p&gt;knative用のpipelineツール。k8sで使うときにどのくらい便利なのかよく分からなかった。
+knative自体はとても興味があるのでいつかまとめる。  &lt;/p&gt;
+&lt;h4 id=&quot;jenkins-x&quot;&gt;&lt;a href=&quot;#jenkins-x&quot; aria-label=&quot;jenkins x permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jenkins X&lt;/h4&gt;
+&lt;p&gt;全然調べてないがGitOps用のツール&lt;/p&gt;
+&lt;h3 id=&quot;spinnaker&quot;&gt;&lt;a href=&quot;#spinnaker&quot; aria-label=&quot;spinnaker permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;spinnaker&lt;/h3&gt;
+&lt;p&gt;歴史があるツール。個人的にはArgoの方が将来性があると感じた。&lt;br&gt;
+CIが中心のops、CIops。&lt;br&gt;
+マージ → コンテナbuild → レジストリ更新 → レジストリ更新トリガ, spinnakerがコンテナをデプロイ  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2年リリースがない、これは大丈夫か&lt;/li&gt;
+&lt;li&gt;k8s専用のCDツールではないので複雑&lt;/li&gt;
+&lt;li&gt;調べた限りだと不安定な部分があるらしい(試してないので参考程度でお願いします)&lt;/li&gt;
+&lt;li&gt;GitOpsではない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;skaffold&quot;&gt;&lt;a href=&quot;#skaffold&quot; aria-label=&quot;skaffold permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;skaffold&lt;/h3&gt;
+&lt;p&gt;ファイルを監視して、build → 本番（ローカルも可能）にapplyするツール&lt;br&gt;
+個人的には要らない、GitOpsでもないしファイル変更で本番反映されたら怖い。&lt;br&gt;
+ちゃんと調べてないが用途がよくわかってない・・&lt;/p&gt;
+&lt;h3 id=&quot;jenkins&quot;&gt;&lt;a href=&quot;#jenkins&quot; aria-label=&quot;jenkins permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jenkins&lt;/h3&gt;
+&lt;p&gt;ない&lt;/p&gt;
+&lt;h1 id=&quot;15章-オブザーバビリティと監視&quot;&gt;&lt;a href=&quot;#15%E7%AB%A0-%E3%82%AA%E3%83%96%E3%82%B6%E3%83%BC%E3%83%90%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E3%81%A8%E7%9B%A3%E8%A6%96&quot; aria-label=&quot;15章 オブザーバビリティと監視 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;15章 オブザーバビリティと監視&lt;/h1&gt;
+&lt;p&gt;ツールを入れて収集して満足せず、事実とフィードバックに基づくエンジニアリング文化を醸成し、&lt;br&gt;
+組織全体に適用していくことが重要。的なことが書かれていて確かに、と思った。  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ブラックボックス監視
+システムの外側から見える挙動を観察する。内部には踏み込まない。&lt;br&gt;
+pingやcurlで応答を確認する。  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;予測可能で外部に露出する部分しか監視できない&lt;/li&gt;
+&lt;li&gt;問題が発生した後でしか通知されない&lt;/li&gt;
+&lt;li&gt;何が壊れているかわかるが、なぜ壊れているかは不明&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;アップ
+アップタイム99.99...%、ユーザがハッピーでなければ9の数に意味はありません、痺れる言葉ですね  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分散システムは完全な意味でアップとなることはない&lt;br&gt;
+サービスが部分的に劣化していることが当たり前であり、それを前提として稼働する。&lt;br&gt;
+全体で見るとup/downの2値ではないんだと&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ロギング&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中央データベースに集約(ex. elastic search)
+クエリやグラフを通じて分析や通知がされる&lt;/li&gt;
+&lt;li&gt;S/N比、なんでもかんでも採取するとエラーが埋もれて検知が鈍くなる&lt;/li&gt;
+&lt;li&gt;JSONで構造化しておこう&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;メトリクス&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;何かの状態を測定・集計した数値&lt;/li&gt;
+&lt;li&gt;なぜか、の理解に役立つ、メモリ不足、CPU不足、I/Oが詰まる&lt;/li&gt;
+&lt;li&gt;問題の予測に役立つ、障害の未然防止、アラート通知&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;トレーシング
+分散システムで特に重要  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;単一のユーザリクエストがたどるライフサイクル全体を明らかにする&lt;/li&gt;
+&lt;li&gt;一部ユーザのレイテンシなど&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; : Jaegerなどのツールがある&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;オブザーバビリティパイプライン
+ログルータのような考え方か？&lt;br&gt;
+アプリ、コンテナ、インフラなどからデータ種類など問わずに一箇所のパイプラインに送信し、&lt;br&gt;
+パイプラインがフィルタして適切な場所に届ける。&lt;br&gt;
+Pub/Sub的な考え方。  &lt;/li&gt;
+&lt;li&gt;外部サービスの監視
+uptime robot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;16章-kubernetesにおけるメトリクス&quot;&gt;&lt;a href=&quot;#16%E7%AB%A0-kubernetes%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%A1%E3%83%88%E3%83%AA%E3%82%AF%E3%82%B9&quot; aria-label=&quot;16章 kubernetesにおけるメトリクス permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;16章 Kubernetesにおけるメトリクス&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;カウンタ
+増えていくだけの数字、リセットしない限り&lt;/li&gt;
+&lt;li&gt;ゲージ
+メモリ使用率のように継続的に変化する量&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;何をメトリクスとすべきか&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;サービス: REDパターン(Requests-Errors-Duration)
+リクエスト駆動型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;リクエスト数&lt;/li&gt;
+&lt;li&gt;エラー数&lt;/li&gt;
+&lt;li&gt;処理時間&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;リソース: USEパターン(Utilization, Saturation, Errors)
+関心対象がサービスではなくリソース&lt;/li&gt;
+&lt;li&gt;ビジネスメトリクス&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kubernetesのメトリクス&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;クラスタ健全性のメトリクス&lt;/li&gt;
+&lt;li&gt;Deploymentのメトリクス&lt;/li&gt;
+&lt;li&gt;コンテナのメトリクス&lt;/li&gt;
+&lt;li&gt;アプリケーションのメトリクス&lt;/li&gt;
+&lt;li&gt;ランタイムのメトリクス&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;メトリクスの分析&quot;&gt;&lt;a href=&quot;#%E3%83%A1%E3%83%88%E3%83%AA%E3%82%AF%E3%82%B9%E3%81%AE%E5%88%86%E6%9E%90&quot; aria-label=&quot;メトリクスの分析 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;メトリクスの分析&lt;/h2&gt;
+&lt;p&gt;すごい一般的な話しかないので割愛。  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;メトリクス周りのツール
+【Prometheusで統一していくのがいいのかな】&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prometheus
+デファクトスタンダード&lt;br&gt;
+時系列メトリクスデータに基づく監視、アラートツール(Alertmanager)&lt;br&gt;
+事前設定されたポートでユーザのアプリケーションにHTTP接続して取れるものをスクレイプ する
+可視化はGrafanaが使われることが多い。  &lt;/li&gt;
+&lt;li&gt;stackdriver&lt;/li&gt;
+&lt;li&gt;cloudwatch&lt;/li&gt;
+&lt;li&gt;Azure monitor&lt;/li&gt;
+&lt;li&gt;Datadog
+高機能監視ツール&lt;/li&gt;
+&lt;li&gt;New Relic
+アプリケーション重視&lt;/li&gt;
+&lt;li&gt;NETDATA
+これもイケてる。でもPrometheusでいいかな&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded><author>youremail@gmail.com</author></item><item><title><![CDATA[統計検定準1級-02 ~事象と確率 練習~]]></title><description><![CDATA[今回は前回やった範囲の問題を解いた。   統計検定2級 2016/11月 解答番号12,13 参考書を買ってね。     といたやつ。 自分はこういう問題を解く時は、事象A, Bのようにきちんと書き出すようにしている。そこができれば後は解くだけな気がする。    統計WEb…]]></description><link>https://t-akzw.github.io/blog/69d131a9-0035-5a87-bd40-14e9796b4e4c</link><guid isPermaLink="false">https://t-akzw.github.io/blog/69d131a9-0035-5a87-bd40-14e9796b4e4c</guid><category><![CDATA[統計検定準1級]]></category><pubDate>Mon, 23 Mar 2020 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今回は前回やった範囲の問題を解いた。  &lt;/p&gt;
 &lt;h2 id=&quot;統計検定2級-201611月-解答番号1213&quot;&gt;&lt;a href=&quot;#%E7%B5%B1%E8%A8%88%E6%A4%9C%E5%AE%9A2%E7%B4%9A-201611%E6%9C%88-%E8%A7%A3%E7%AD%94%E7%95%AA%E5%8F%B71213&quot; aria-label=&quot;統計検定2級 201611月 解答番号1213 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;統計検定2級 2016/11月 解答番号12,13&lt;/h2&gt;
 &lt;p&gt;参考書を買ってね。  &lt;/p&gt;
 &lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.amazon.co.jp/gp/product/4788925354/ref=as_li_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4788925354&amp;linkCode=as2&amp;tag=littlem4649-22&amp;linkId=cbf7afd27e602dcc52573acdbb061401&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;MarketPlace=JP&amp;ASIN=4788925354&amp;ServiceVersion=20070822&amp;ID=AsinImage&amp;WS=1&amp;Format=_SL250_&amp;tag=littlem4649-22&quot; &gt;&lt;/a&gt;&lt;img src=&quot;//ir-jp.amazon-adsystem.com/e/ir?t=littlem4649-22&amp;l=am2&amp;o=9&amp;a=4788925354&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;&lt;/p&gt;

@@ -46,8 +46,8 @@ const TopImage = (props) => {
     <>
       <div style={topimg_div}>
         <div>
-          <p style={topimg_div_p1}>あらゆる分野に精通したエンジニア王に、俺はなるっ！！</p>
-          <p style={topimg_div_p2}>Machine Learning, Statistics, Argolithm, CloudNative, Frontend, Backend, etc..</p>
+          <p style={topimg_div_p1}>エンジニア王に、俺はなるっ！！</p>
+          <p style={topimg_div_p2}>Statistics, CloudNative, Backend, etc..</p>
         </div>
       </div>
     </>

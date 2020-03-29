@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://t-akzw.github.io/blog/blog/9e757b76-2949-5e66-816a-007c15432a0a</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://t-akzw.github.io/blog/blog/5f1b3e70-3874-560c-a8fd-378e3857b28f</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t-akzw.github.io/blog/blog/3a2785c2-7104-5aa5-85b0-0b210653d98c</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t-akzw.github.io/blog/blog/f8789909-08fa-58f1-b24d-396fe18f7fda</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t-akzw.github.io/blog/blog/69d131a9-0035-5a87-bd40-14e9796b4e4c</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -10,6 +11,7 @@
 <url> <loc>https://t-akzw.github.io/blog/blog/154f23c4-79e7-5b92-8ca4-0218a754a760</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t-akzw.github.io/blog/blog/tags/css/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t-akzw.github.io/blog/blog/tags/css-grid/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://t-akzw.github.io/blog/blog/tags/frontend/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t-akzw.github.io/blog/blog/tags/kubernetes/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t-akzw.github.io/blog/blog/tags/dev-ops/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t-akzw.github.io/blog/blog/tags/統計検定準-1-級/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

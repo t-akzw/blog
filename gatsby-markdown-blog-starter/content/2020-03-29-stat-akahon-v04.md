@@ -1,0 +1,48 @@
+---
+date: 2020-03-29-stat-akahon-v04
+title: "統計検定準1級-04 ~確率分布と母関数~"
+cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
+categories: 
+    - Statistics
+tags:
+    - 統計検定準1級
+    - 確率
+---
+
+## 確率分布と母関数
+
+統計検定準1級の出題範囲  
+- 同時確率関数
+- 同時確率密度関数
+- 周辺確率関数
+- 周辺確率密度関数
+
+<a target="_blank"  href="https://www.amazon.co.jp/gp/product/4130420658/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4130420658&linkCode=as2&tag=littlem4649-22&linkId=c6133939c8219daece91ffa08adfb69d"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4130420658&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=littlem4649-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=littlem4649-22&l=am2&o=9&a=4130420658" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+こちらの本では第7章の内容です。  
+
+## 説明
+まずは、同時確率分布、周辺確率分布、などの用語について説明する。  
+
+![](https://lh3.googleusercontent.com/d1jQUgMoY9v0987_em74jvjFVELBOrOt_y4-i-I0V6-i1Y6yiHTJYCfF_tFO0wBebkcI9aKBwNUghgm9uAj_mlJ5rhcBD3R-ueAW1atv0LAZN0n1OIf1olbPK2-IOGWNksc4S1ccPlltG33CKp_rkcAdPcMJ-GVZk1mG7k4qxn-kA2uF4FW7M7gT6gO8aOJkkq-RI7qA1DEZBHg69LvhYAtq63ycg9xk-r-dp-psVfqUqE1tjeI6BhxkBDYjDOvKnlg9Q6uUB0GxD5tMazv1a2MkXoZsrzktKnmQA0UcwMbAioSYg_Chn8hCJgSL9pQQ_SqbXH6EDvc9YGEKMHDvx5y-pU1XCVYOdz-GB8b1iX-0xkCZ_vOLNNKoaB_3Etp9pzvjbl4dlMXOaiOVcO5s1LvCEOLzki8VQb3ee4-Gnir3vJU7P_gHp6p1wy0J9QN8ZGx4S8mh99_1_j8_4TzI9WFLR88coTzWSaauVlGlA99nN1p4G-o_8yu9tsqmWroSLbiv0O8ME4TN4QQxjv42j8a_pvXbtu00JHjY_ynI7dSqPr-N6ZfpFgDPu8_dQWoZ7i5pY3AQp56GRGEvY0fL5fGJLWZA2EFGgNCKGGXN6GYOVcyifpBEwBlSCRsacBXgP2O5AQb0HZS9ABg0-pjM5_QnSx7ZRsEVHk6QqvKdiGJ6TBz0PVVF96DxbpmvPjOPKyXV6JJWlLhXFaRgF_KUY6ExcRXuQ4XNcn7_YNepHi3FCNSbhk58GIA=w1668-h2154-no)
+
+## 練習
+
+皆さんは、同時確率分布が与えられた時に、周辺確率分布、期待値、分散、及び、相関係数を自力で出せますか？  
+似たような計算をさせる問題は過去問でみたことがあるので一回解いておいた方がいいと思う。  
+
+### 周辺確率分布、期待値、の導出まで
+
+![](https://lh3.googleusercontent.com/Dx2wfzyD5DtKuJ7LPCt4qWk-K-0A08fiWOgMN_z-MR2lDX_hBj6Is3yKXTzyi6ZiS0PYkkCjoDKrrpISbsfJW9rrS-4eeu2mABPKP1W74nlwf5YsXt3rd560S7bOfDXl_Xiw2_ADZKoYpfz305BkJg6n2O-RPXyQev3VrLcPvRrR9id1UVAX5SBndKkEtuV64w-0WBIkSPiGImZ6JUk0hgW_c9tsH2quU9LW2JJvRX82eY8wRKuJ_VBX7lEqQdKPhGPTndu5vsLt8Z9dgjzOHM5ysPwM2bhOD-LcwRktWm2oDNOEPo4SBmbZRyUEOld4zGfehLNQ8jYqadlZhCRz0WntDFMr0LmoW1K2oyrTZEuckNIUr9Vk7JlYIoMd6jEFRJPu0r6PrAAj9SU__HUMBWmZiM2ZeLJCZeR1wiGDLx6vZhBm3xTt1WGPr2uytFJ9eu_4FSkIaBrBjlB4a_zKjxvotOXtABkw0YvcbfJSV29JwWlvKqW5AZjsAqVBq-L9VvwF7QR1U3Fi1VhL7lQD8mPGQ-_skpldiYW_NSd0MBDeV5zwSUYB7AHU8ae85kT4a-korQPcWoYD78Xf4rcKmphMf5INIY7JZocnljAC4bWa7iFOcfv-NK8hdK8Fa0kc5dWxZ9LDf7l45k-kOZIAvG3CbuFZPPtcUgoRPOAcqqNU11OONYI5auEZ9_Zntpk38QxKLklBPfAL82qxmhniOzeFZSnAnilU5aQaeWC8fHWUTR691RKWqJc=w1668-h2154-no)
+
+### 分散
+
+重要なポイントは、分散と期待値の式の関係性を自力で導けるかどうか。  
+
+![](https://lh3.googleusercontent.com/6HqiBfXNwrAhh56vGOA5V53xtcr1yEMBzm1P4ivqW_Ykj1jb7SSkPx8fmULGABHIDPcuKox4_QyIsBAcSoB_w8im6PCpMXr6Hi9aIxIN_thpbXwwRQpFrrsAcS0WxiLprdkLuRPOluugXGxbmGwQexDOAQDfDJXOEbPScRaWxAUQxJ3pW83nQFuHAjllyAcMqnkDIcUXzeuuuZ-YuLYccoKPEvDwH418gHSojuVCbVB99dUhDPuSR5QRNULTyJ5UZ2YgGioPTvDZVVRbSdxNr7QVkQpePtdTJRTw6D2FtMY-rPro3uDMRWVCRklS-7t8PyB_kkQqohmh2e9q84yZMm7YB7YhUOlSM5AQlffsm1dCjxklj6WRixcTf4QxUdsUKXMuDJUd3YZgGFPlfRaLjCtGCpjMDrwtyvHnCI7YRqwMxzRJfa_iyFN3e-eydS_lT2PxPAMoX8OcxAYzBI0RVVKkpIB4hPgw18r0epgn2xSNx_alldYUEvuYTWt5Ryt4pxUoe0ZQ5ScwcPBvlPrfrbElwbkhnYQsLGbvgUgOVX8so2XjXHJKGV7YNht_KW1H0Prw8OxO3nFbpVpUfvvqNCZO0393QMMJidkv6I3pbyzNDS5vEqw_rbNr_C2Hm6Shg8dGft1sLfR2IxU-rL_Pvt4cVFuqM7sfHyas8Xe-AnFYmFGhsWH_GTW5n5c1pLIDlRSHgSBpI7veofNLXbpeGlg23goaeU9Wm4M2lFnecQwHTAe0eanelVw=w1668-h2154-no)
+
+### 相関係数
+
+重要なポイントは、共分散と期待値の関係性、相関係数の定義、を把握しているか。  
+
+![](https://lh3.googleusercontent.com/qSRn-Zj_eC573qBSTNTRRyxgjByuGajIqfUegTey6tzY2ODCPrcNVbROPDvFF-i-ntahjR7XDFeXTal7-1qHfM9P8ujMkzNEVs9___OJ54itWb2XfAau7pNYXYRos1AuwuHRP5pI7bjGxu-g-MGQpp8GXTt3LfQ938vl1bO505a3Mc6NEKQmQB3etal6N1TUQmeuN0E0vHuviO5kq9mtzFzyZ2ZLSq3O8tO9lYTnMdTvQjbXX2JaQT_2QOzBzxzeJGuwgUca47oNhaKAb_yQVsdgye1fkTLHdKPEY_3IebE7MdBXshHfoZ4bI8gkJsO5Hm10pu5cwCGNMTKWSI3wDzRxaSNPm-F_Clkh5WAu7ZexpFfypDDg95UCtzeR9gZ6MVUtL5zblnbh69fYNmXF3iCL7zW_XHffr6P6PhdCChiJVk6y1eGoAA83Z1bJ6M0dSe90S7onkoZUMAbml4cu5HlO7CYhmcSOBPOvK1xIo0-hb3Sx6V_u1ayjio7U6UuI352pcBP02ytPzZM4uhC40EgZ2UFfYA_sj65NZbOk3Rrp-g8ujVhsOM88Tcd-r6H7nb7YPJcQ1RGEXwonCsytVOVmegPYKnynrlgzTHYmJ60qsAEGovQFNPyNySSD7T7SPxvegLMDGv1qjGtGgtcDyDr6La8xPdgsP59V0qgFinj7jzaQvlvm5ofKQtM3rOMootuHz0pHpZ2MhC2Plkpvcz0v61VvHEBkpg0jqVmnbi8WW86MjwgVbd4=w1668-h2154-no)
